@@ -57,3 +57,13 @@
 1774023023: Client auto-E3E51D9D-CD34-7B95-4DCB-46FD85446E16 [192.168.65.1:28608] disconnected: connection closed by client.
 1774023023: Client auto-1AC789DB-6F13-AADD-D371-E410456BE84E [192.168.65.1:58053] disconnected: connection closed by client.
 1774023023: Client auto-E9101273-4568-7557-59BD-93DBEB1AC47B [192.168.65.1:35000] disconnected: connection closed by client.
+1774023233: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774023345: New connection from 192.168.65.1:41327 on port 1883.
+1774023345: New client connected from 192.168.65.1:41327 as auto-847A9531-2AB5-FA11-A07F-E534D7568E02 (p4, c1, k60).
+1774023346: New connection from 192.168.65.1:65176 on port 1883.
+1774023346: New client connected from 192.168.65.1:65176 as auto-DEA43586-C481-D4D5-F716-55DE760AB5A6 (p4, c1, k60).
+1774023357: New connection from 192.168.65.1:38067 on port 1883.
+1774023357: New client connected from 192.168.65.1:38067 as auto-DC2C9AAB-E6F6-EDB3-1DB8-DADB6B59FD5A (p4, c1, k60).
+1774023372: Client auto-847A9531-2AB5-FA11-A07F-E534D7568E02 [192.168.65.1:41327] disconnected: connection closed by client.
+1774023372: Client auto-DEA43586-C481-D4D5-F716-55DE760AB5A6 [192.168.65.1:65176] disconnected: connection closed by client.
+1774023372: Client auto-DC2C9AAB-E6F6-EDB3-1DB8-DADB6B59FD5A [192.168.65.1:38067] disconnected: connection closed by client.
