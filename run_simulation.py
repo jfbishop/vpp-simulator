@@ -24,6 +24,7 @@ from simulator.industrial_load import IndustrialLoadAsset
 from coordinator.coordinator import Coordinator
 from grid.publisher import run as run_grid_publisher
 from dotenv import load_dotenv
+from influx_writer import InfluxWriter
 import os
 
 load_dotenv()
@@ -64,6 +65,14 @@ if __name__ == "__main__":
 
     # -- Grid baseline publisher --
     threads.append(start_thread(run_grid_publisher, "grid-publisher"))
+    time.sleep(0.5)
+
+    # -- InfluxDB writer --
+    def run_influx_writer():
+        writer = InfluxWriter()
+        writer.run()
+
+    threads.append(start_thread(run_influx_writer, "influx-writer"))
     time.sleep(0.5)
 
     # -- BESS assets --
