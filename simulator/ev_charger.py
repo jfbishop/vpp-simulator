@@ -304,6 +304,24 @@ class EvChargerAsset(AssetBase):
         Splits power into charge_kw (always >= 0) and discharge_kw
         (always <= 0) for Grafana stacking, same convention as BessAsset.
         """
+        # At the top of get_state(), before computing anything:
+        if not self._is_plugged_in():
+            return {
+                "power_kw":             0.0,
+                "charge_kw":            0.0,
+                "discharge_kw":         0.0,
+                "state_of_charge":      None,
+                "state_of_charge_pct":  None,
+                "dispatchable_kw":      0.0,
+                "driver_min_soc":       self.driver_min_soc,
+                "departure_time":       self._get_departure_time().isoformat(),
+                "plugged_in":           0,
+                "safe_to_pause":        0,
+                "battery_kwh":          self.battery_kwh,
+                "charge_rate_kw":       self.charge_rate_kw,
+                "mode":                 "away",
+                "dispatch_active":      0,
+            }
         self._current_power_kw = self._compute_power()
         self._update_soc()
 
