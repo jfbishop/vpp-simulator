@@ -213,6 +213,8 @@ python run_simulation.py
 
 **ERCOT ancillary services** — Extend the BESS model to participate in ERCOT's ancillary services markets (REGUP, REGDN, RRS, ECRS), which require sub-second response capability and introduce frequency regulation as a dispatch signal alongside load-based dispatch.
 
+**Additional scheduling** - Right now the only pre-work the coordinator does is to make sure the BESS assets are charged before peak load. In a more mature model the coordinator could also pre-cool houses (so add thermometer load) before the peak, minimizing the rebound spike after deploying the thermometers and also hopefully keeping people more comfortable in their homes during the hours where the grid is most constrained. Inspired in part by EnergyHub's [VPP maturity model](https://www.energyhub.com/resource/building-trustworthy-power-plants-vpp-maturity-model).
+
 ---
 
 ## Background
