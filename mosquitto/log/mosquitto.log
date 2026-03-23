@@ -1210,3 +1210,5 @@
 1774233927: Client auto-4B66AE5C-3D54-6619-086E-AA9C52BF1E1F [192.168.65.1:22894] disconnected: connection closed by client.
 1774233927: Client auto-82C43CF9-4772-29B6-65EB-FB16B3E2B72A [192.168.65.1:26344] disconnected: connection closed by client.
 1774233927: Client auto-C43F0FF2-EEE5-A1FD-E224-DDA26AA37048 [192.168.65.1:31939] disconnected: connection closed by client.
+1774234172: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774235973: Saving in-memory database to /mosquitto/data//mosquitto.db.

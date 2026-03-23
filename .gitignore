@@ -2,5 +2,6 @@
 venv/
 __pycache__/
 *.pyc
-.DS_Storemosquitto/data/
+.DS_Store
+mosquitto/data/
 mosquitto/log/

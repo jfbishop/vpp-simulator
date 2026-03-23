@@ -169,7 +169,7 @@ The Grafana dashboard provides a real-time operator view across five panels:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/vpp-simulator.git
+git clone https://github.com/jfbishop/vpp-simulator.git
 cd vpp-simulator
 
 # Start infrastructure (Mosquitto, InfluxDB, Grafana)
