@@ -48,6 +48,7 @@ import random
 import math
 from datetime import datetime, timezone
 from simulator.asset_base import AssetBase
+from grid.sim_clock import SimClock
 
 
 class ThermostatAsset(AssetBase):
@@ -102,8 +103,7 @@ class ThermostatAsset(AssetBase):
 
     def _texas_hour(self) -> float:
         """Returns current hour in Texas local time (CDT = UTC-5)."""
-        now = datetime.now(timezone.utc)
-        return (now.hour - 5) % 24 + now.minute / 60.0
+        return SimClock.texas_hour()
 
     def _get_outdoor_temp_f(self) -> float:
         """
@@ -113,7 +113,7 @@ class ThermostatAsset(AssetBase):
         Range: ~75°F overnight to ~98°F afternoon peak.
         Adds small random noise for realism.
         """
-        hour = self._texas_hour()
+        hour = SimClock.texas_hour()
 
         # Sine curve: trough at hour 6, peak at hour 15
         phase = (hour - 6) / 24.0 * 2 * math.pi
@@ -136,12 +136,16 @@ class ThermostatAsset(AssetBase):
         infiltration_rate: how fast indoor temp drifts toward outdoor
         cooling_rate:      how fast HVAC pulls indoor temp toward setpoint
         """
+        # Scale rates by simulated interval so thermal dynamics work correctly
+        # at any time scale
+        sim_interval_hours = self.PUBLISH_INTERVAL_SIM_SEC / 3600.0
+
         # How much the indoor temp drifts toward outdoor per interval
         # Small value = high thermal mass = slow response
-        infiltration_rate = 0.05 * self.home_size_factor
+        infiltration_rate = 0.05 * self.home_size_factor * sim_interval_hours
 
         # How much HVAC pulls temp toward setpoint per interval
-        cooling_rate = 0.15 * self.home_size_factor
+        cooling_rate = 0.15 * self.home_size_factor * sim_interval_hours
 
         # Drift toward outdoor temperature (heat always infiltrates)
         self._indoor_temp_f += (

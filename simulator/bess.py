@@ -71,6 +71,7 @@ class BessAsset(AssetBase):
     SOC_MIN = 0.10   # never discharge below 10%
     SOC_MAX = 0.95   # never charge above 95%
 
+
     def __init__(
         self,
         asset_id: str,
@@ -111,13 +112,13 @@ class BessAsset(AssetBase):
         Clamps to [SOC_MIN, SOC_MAX] and cuts power if limits are hit,
         mimicking real BMS behavior.
         """
-        interval_hours = self.PUBLISH_INTERVAL_SEC / 3600.0
+        interval_hours = self.PUBLISH_INTERVAL_SIM_SEC / 3600.0
         delta_soc = (self._current_power_kw * interval_hours) / self.energy_rating_kwh
         new_soc = self.soc + delta_soc
 
         if new_soc >= self.SOC_MAX:
             self.soc = self.SOC_MAX
-            if self._mode == "charge":
+            if self._mode in ("charge"):
                 self.logger.info("SoC limit reached — stopping charge")
                 self._mode = "idle"
                 self._target_kw = 0.0
@@ -174,7 +175,7 @@ class BessAsset(AssetBase):
             return 0.0
 
         energy_headroom = (self.soc - self.SOC_MIN) * self.energy_rating_kwh
-        interval_hours = self.PUBLISH_INTERVAL_SEC / 3600.0
+        interval_hours = self.PUBLISH_INTERVAL_SIM_SEC / 3600.0
         max_from_soc = energy_headroom / interval_hours
 
         return round(min(self.power_rating_kw, max_from_soc), 2)
@@ -197,6 +198,7 @@ class BessAsset(AssetBase):
         """
         self._current_power_kw = self._compute_power()
         self._update_soc()
+
 
         # Split into directional fields for Grafana stacking
         # charge_kw:    positive when consuming from grid, 0 otherwise
@@ -250,7 +252,7 @@ class BessAsset(AssetBase):
             target = float(signal.get("target_kw", self.power_rating_kw))
             self._mode = "charge"
             self._target_kw = target
-            self._dispatch_active = True
+            self._dispatch_active = False
             self.logger.info(
                 f"Dispatched: charging at {target}kW | SoC: {self.soc:.0%}"
             )

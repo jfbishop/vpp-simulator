@@ -20,6 +20,7 @@ ERCOT DATA SWAP:
 
 import random
 from datetime import datetime, timezone
+from grid.sim_clock import SimClock
 
 # ---------------------------------------------------------------------------
 # Anchor points defining the load curve shape (Texas local time)
@@ -126,7 +127,7 @@ def get_baseline_load(dt: datetime = None) -> float:
         raise ValueError(f"No ERCOT data found for timestamp {dt}")
     """
     if dt is None:
-        dt = datetime.now(timezone.utc)
+        dt = SimClock.now()
 
     # Convert UTC to Texas summer time (CDT = UTC-5, CST = UTC-6)
     # Using -5 for summer (daylight saving). For a production system

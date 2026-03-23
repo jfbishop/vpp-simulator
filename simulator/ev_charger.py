@@ -53,6 +53,8 @@ Real-world context:
 import random
 from datetime import datetime, timezone, timedelta
 from simulator.asset_base import AssetBase
+from grid.sim_clock import SimClock
+
 
 
 class EvChargerAsset(AssetBase):
@@ -123,8 +125,7 @@ class EvChargerAsset(AssetBase):
 
     def _texas_hour(self) -> float:
         """Returns current hour in Texas local time (CDT = UTC-5)."""
-        now = datetime.now(timezone.utc)
-        return (now.hour - 5) % 24 + now.minute / 60.0
+        return SimClock.texas_hour()
 
     def _is_plugged_in(self) -> bool:
         """
@@ -134,7 +135,8 @@ class EvChargerAsset(AssetBase):
         Plugged in from plugged_in_hour until departure_hour the next morning.
         Handles overnight window (e.g. 18:00 to 08:00).
         """
-        hour = self._texas_hour()
+        # CLEAN THIS UP!
+        hour = SimClock.texas_hour()
 
         if self.plugged_in_hour > self.departure_hour:
             # Overnight window — e.g. plugged in at 18, departs at 8
@@ -148,8 +150,8 @@ class EvChargerAsset(AssetBase):
         Returns the next departure time as a UTC datetime.
         Used to compute safe_to_pause and published in state message.
         """
-        now = datetime.now(timezone.utc)
-        texas_hour = self._texas_hour()
+        now = SimClock.now()
+        texas_hour = SimClock.texas_hour()
 
         # Calculate hours until next departure
         hours_until_departure = (self.departure_hour - texas_hour) % 24
@@ -183,7 +185,7 @@ class EvChargerAsset(AssetBase):
         time_needed_hours = energy_needed / self.charge_rate_kw
 
         departure = self._get_departure_time()
-        now = datetime.now(timezone.utc)
+        now = SimClock.now()
         time_available_hours = (departure - now).total_seconds() / 3600.0
 
         # Add a 10% buffer so we don't cut it too close
@@ -208,7 +210,7 @@ class EvChargerAsset(AssetBase):
 
         # Energy available above driver minimum
         energy_headroom = (self.soc - self.driver_min_soc) * self.battery_kwh
-        interval_hours = self.PUBLISH_INTERVAL_SEC / 3600.0
+        interval_hours = self.PUBLISH_INTERVAL_SIM_SEC / 3600.0
         max_from_soc = energy_headroom / interval_hours
 
         return round(min(self.charge_rate_kw, max_from_soc), 2)
@@ -229,7 +231,7 @@ class EvChargerAsset(AssetBase):
         driver range — the inverter hardware floor SOC_FLOOR is a
         last-resort protection only.
         """
-        interval_hours = self.PUBLISH_INTERVAL_SEC / 3600.0
+        interval_hours = self.PUBLISH_INTERVAL_SIM_SEC / 3600.0
         delta_soc = (self._current_power_kw * interval_hours) / self.battery_kwh
         new_soc = self.soc + delta_soc
 

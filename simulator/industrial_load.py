@@ -56,6 +56,7 @@ import math
 import time
 from datetime import datetime, timezone
 from simulator.asset_base import AssetBase
+from grid.sim_clock import SimClock
 
 
 class IndustrialLoadAsset(AssetBase):
@@ -110,8 +111,7 @@ class IndustrialLoadAsset(AssetBase):
 
     def _texas_hour(self) -> float:
         """Returns current hour in Texas local time (CDT = UTC-5)."""
-        now = datetime.now(timezone.utc)
-        return (now.hour - 5) % 24 + now.minute / 60.0
+        return SimClock.texas_hour()
 
     def _get_baseline_load_kw(self) -> float:
         """
@@ -127,7 +127,7 @@ class IndustrialLoadAsset(AssetBase):
         Adds small random noise to simulate real load variation
         (equipment cycling, variable process loads, etc.)
         """
-        hour = self._texas_hour()
+        hour = SimClock.texas_hour()
 
         # Sine-based profile peaking at noon, troughing at midnight
         # Shifted and scaled to [min_load, peak_load] range

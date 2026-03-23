@@ -279,3 +279,934 @@
 1774039001: Client auto-BDA313D0-AEE9-D0DF-B332-22A2ECE8BECB [192.168.65.1:34310] disconnected: connection closed by client.
 1774039001: Client auto-D8C1B427-3F74-D7B7-EFA7-1B4D7C0131B8 [192.168.65.1:50702] disconnected: connection closed by client.
 1774039001: Client auto-59849DA9-3A37-C33F-3ADE-3D7CC521B211 [192.168.65.1:24638] disconnected: connection closed by client.
+1774039131: New connection from 192.168.65.1:30980 on port 1883.
+1774039131: New client connected from 192.168.65.1:30980 as auto-F34C4168-770A-FB3D-7E67-233D02824E2A (p4, c1, k60).
+1774039131: New connection from 192.168.65.1:41773 on port 1883.
+1774039131: New client connected from 192.168.65.1:41773 as auto-4BCE2550-358B-518C-0AF3-407620EF2D79 (p4, c1, k60).
+1774039132: New connection from 192.168.65.1:27832 on port 1883.
+1774039132: New connection from 192.168.65.1:39870 on port 1883.
+1774039132: New connection from 192.168.65.1:25109 on port 1883.
+1774039132: New connection from 192.168.65.1:58456 on port 1883.
+1774039132: New connection from 192.168.65.1:36276 on port 1883.
+1774039132: New connection from 192.168.65.1:48211 on port 1883.
+1774039132: New connection from 192.168.65.1:26095 on port 1883.
+1774039132: New connection from 192.168.65.1:38231 on port 1883.
+1774039132: New connection from 192.168.65.1:62048 on port 1883.
+1774039132: New connection from 192.168.65.1:56200 on port 1883.
+1774039132: New client connected from 192.168.65.1:27832 as auto-02A1BD37-0616-C5C8-DDBD-142028DD8DDE (p4, c1, k60).
+1774039132: New client connected from 192.168.65.1:39870 as auto-A1A4F41E-0859-7503-6B00-3F2E44334EAA (p4, c1, k60).
+1774039132: New client connected from 192.168.65.1:25109 as auto-4BF30A4A-43A2-7BF8-56A6-A2A0C9050BC6 (p4, c1, k60).
+1774039132: New client connected from 192.168.65.1:58456 as auto-BA14F696-5B07-CACD-C0EF-0A3AEF345AA3 (p4, c1, k60).
+1774039132: New client connected from 192.168.65.1:36276 as auto-3BD76DE2-8BB2-9657-5532-B1BBDEFA2042 (p4, c1, k60).
+1774039132: New client connected from 192.168.65.1:48211 as auto-FED7A445-43DE-7D39-1C02-FDDDA8844F11 (p4, c1, k60).
+1774039132: New client connected from 192.168.65.1:26095 as auto-31C79872-5D8F-2B99-FA49-2FE4D544183C (p4, c1, k60).
+1774039132: New client connected from 192.168.65.1:38231 as auto-E3A1A7FD-1670-1567-7B7B-44EAFE34F0EF (p4, c1, k60).
+1774039132: New client connected from 192.168.65.1:62048 as auto-11B414A1-ABA8-F10A-0B62-ECA54FA07998 (p4, c1, k60).
+1774039132: New client connected from 192.168.65.1:56200 as auto-B9EB27F2-CE51-9034-F274-188CC382C7AD (p4, c1, k60).
+1774039133: New connection from 192.168.65.1:50621 on port 1883.
+1774039133: New client connected from 192.168.65.1:50621 as auto-309ABBC0-F995-0BF2-8121-FD34817CBE19 (p4, c1, k60).
+1774039563: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774041364: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774041956: Client auto-309ABBC0-F995-0BF2-8121-FD34817CBE19 [192.168.65.1:50621] disconnected.
+1774041956: Client auto-11B414A1-ABA8-F10A-0B62-ECA54FA07998 [192.168.65.1:62048] disconnected: connection closed by client.
+1774041956: Client auto-F34C4168-770A-FB3D-7E67-233D02824E2A [192.168.65.1:30980] disconnected: connection closed by client.
+1774041956: Client auto-31C79872-5D8F-2B99-FA49-2FE4D544183C [192.168.65.1:26095] disconnected: connection closed by client.
+1774041956: Client auto-B9EB27F2-CE51-9034-F274-188CC382C7AD [192.168.65.1:56200] disconnected: connection closed by client.
+1774041956: Client auto-FED7A445-43DE-7D39-1C02-FDDDA8844F11 [192.168.65.1:48211] disconnected: connection closed by client.
+1774041956: Client auto-E3A1A7FD-1670-1567-7B7B-44EAFE34F0EF [192.168.65.1:38231] disconnected: connection closed by client.
+1774041956: Client auto-4BCE2550-358B-518C-0AF3-407620EF2D79 [192.168.65.1:41773] disconnected: connection closed by client.
+1774041956: Client auto-A1A4F41E-0859-7503-6B00-3F2E44334EAA [192.168.65.1:39870] disconnected: connection closed by client.
+1774041956: Client auto-4BF30A4A-43A2-7BF8-56A6-A2A0C9050BC6 [192.168.65.1:25109] disconnected: connection closed by client.
+1774041956: Client auto-BA14F696-5B07-CACD-C0EF-0A3AEF345AA3 [192.168.65.1:58456] disconnected: connection closed by client.
+1774041956: Client auto-02A1BD37-0616-C5C8-DDBD-142028DD8DDE [192.168.65.1:27832] disconnected: connection closed by client.
+1774041956: Client auto-3BD76DE2-8BB2-9657-5532-B1BBDEFA2042 [192.168.65.1:36276] disconnected: connection closed by client.
+1774043557: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774049666: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774062128: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774073284: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774093395: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774096127: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774097928: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774099729: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774101530: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774110980: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774117044: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774117600: New connection from 192.168.65.1:58325 on port 1883.
+1774117600: New client connected from 192.168.65.1:58325 as auto-8F1489CD-A649-673D-DABE-D8F902CDBE8C (p4, c1, k60).
+1774117600: New connection from 192.168.65.1:59574 on port 1883.
+1774117600: New client connected from 192.168.65.1:59574 as auto-E2EC5504-21C7-6FB8-3955-041A82379BC6 (p4, c1, k60).
+1774117601: New connection from 192.168.65.1:43383 on port 1883.
+1774117601: New connection from 192.168.65.1:38221 on port 1883.
+1774117601: New connection from 192.168.65.1:37488 on port 1883.
+1774117601: New connection from 192.168.65.1:56993 on port 1883.
+1774117601: New connection from 192.168.65.1:61755 on port 1883.
+1774117601: New connection from 192.168.65.1:32717 on port 1883.
+1774117601: New connection from 192.168.65.1:62537 on port 1883.
+1774117601: New connection from 192.168.65.1:32141 on port 1883.
+1774117601: New connection from 192.168.65.1:55064 on port 1883.
+1774117601: New connection from 192.168.65.1:58288 on port 1883.
+1774117601: New client connected from 192.168.65.1:43383 as auto-AE3CDC43-63C2-50E4-3EE8-F8900336BC9C (p4, c1, k60).
+1774117601: New client connected from 192.168.65.1:38221 as auto-CDA040C4-CE35-A993-6D16-014B12C2BAC2 (p4, c1, k60).
+1774117601: New client connected from 192.168.65.1:37488 as auto-EAEBAF76-5F74-B9F9-53D7-23687101DFFB (p4, c1, k60).
+1774117601: New client connected from 192.168.65.1:56993 as auto-285441B7-0A6F-F684-8980-D5F96D0EB72D (p4, c1, k60).
+1774117601: New client connected from 192.168.65.1:61755 as auto-05C89867-CEB8-B45D-B9D5-AB174A4DBBCB (p4, c1, k60).
+1774117601: New client connected from 192.168.65.1:32717 as auto-1504DA38-D583-CF45-B91E-B4DF70FEA483 (p4, c1, k60).
+1774117601: New client connected from 192.168.65.1:62537 as auto-A9F2EE61-3D2C-679B-13F8-B8E1CAF2AA2E (p4, c1, k60).
+1774117601: New client connected from 192.168.65.1:32141 as auto-2774A911-97F3-ACF8-D027-52DD359D74D7 (p4, c1, k60).
+1774117601: New client connected from 192.168.65.1:55064 as auto-1C063490-D1F5-5D63-32E3-42ED23144A5E (p4, c1, k60).
+1774117601: New client connected from 192.168.65.1:58288 as auto-A6D04895-E1C9-DE54-8F26-7D4B3FD03E11 (p4, c1, k60).
+1774117602: New connection from 192.168.65.1:48885 on port 1883.
+1774117602: New client connected from 192.168.65.1:48885 as auto-D38A717E-DC11-6366-98F6-A3C44D4C3F61 (p4, c1, k60).
+1774127538: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774128942: Client auto-D38A717E-DC11-6366-98F6-A3C44D4C3F61 [192.168.65.1:48885] disconnected.
+1774128942: Client auto-8F1489CD-A649-673D-DABE-D8F902CDBE8C [192.168.65.1:58325] disconnected: connection closed by client.
+1774128942: Client auto-E2EC5504-21C7-6FB8-3955-041A82379BC6 [192.168.65.1:59574] disconnected: connection closed by client.
+1774128942: Client auto-285441B7-0A6F-F684-8980-D5F96D0EB72D [192.168.65.1:56993] disconnected: connection closed by client.
+1774128942: Client auto-A9F2EE61-3D2C-679B-13F8-B8E1CAF2AA2E [192.168.65.1:62537] disconnected: connection closed by client.
+1774128942: Client auto-1C063490-D1F5-5D63-32E3-42ED23144A5E [192.168.65.1:55064] disconnected: connection closed by client.
+1774128942: Client auto-EAEBAF76-5F74-B9F9-53D7-23687101DFFB [192.168.65.1:37488] disconnected: connection closed by client.
+1774128942: Client auto-1504DA38-D583-CF45-B91E-B4DF70FEA483 [192.168.65.1:32717] disconnected: connection closed by client.
+1774128942: Client auto-05C89867-CEB8-B45D-B9D5-AB174A4DBBCB [192.168.65.1:61755] disconnected: connection closed by client.
+1774128942: Client auto-AE3CDC43-63C2-50E4-3EE8-F8900336BC9C [192.168.65.1:43383] disconnected: connection closed by client.
+1774128942: Client auto-A6D04895-E1C9-DE54-8F26-7D4B3FD03E11 [192.168.65.1:58288] disconnected: connection closed by client.
+1774128942: Client auto-CDA040C4-CE35-A993-6D16-014B12C2BAC2 [192.168.65.1:38221] disconnected: connection closed by client.
+1774128942: Client auto-2774A911-97F3-ACF8-D027-52DD359D74D7 [192.168.65.1:32141] disconnected: connection closed by client.
+1774129308: New connection from 192.168.65.1:41519 on port 1883.
+1774129308: New client connected from 192.168.65.1:41519 as auto-F34C45F3-250E-70F4-B669-1A927335FE45 (p4, c1, k60).
+1774129309: New connection from 192.168.65.1:43135 on port 1883.
+1774129309: New client connected from 192.168.65.1:43135 as auto-6EFC9260-F510-A52E-86A2-E2A3609EAC5D (p4, c1, k60).
+1774129309: New connection from 192.168.65.1:48976 on port 1883.
+1774129309: New connection from 192.168.65.1:43450 on port 1883.
+1774129309: New client connected from 192.168.65.1:48976 as auto-38FAE4E9-D639-26CF-4A60-142218541279 (p4, c1, k60).
+1774129309: New client connected from 192.168.65.1:43450 as auto-27901512-4F66-CCE4-4906-95F446F535E3 (p4, c1, k60).
+1774129309: New connection from 192.168.65.1:48737 on port 1883.
+1774129309: New connection from 192.168.65.1:21825 on port 1883.
+1774129309: New connection from 192.168.65.1:63265 on port 1883.
+1774129309: New connection from 192.168.65.1:25574 on port 1883.
+1774129309: New connection from 192.168.65.1:32090 on port 1883.
+1774129309: New connection from 192.168.65.1:30213 on port 1883.
+1774129309: New connection from 192.168.65.1:56778 on port 1883.
+1774129309: New connection from 192.168.65.1:53825 on port 1883.
+1774129309: New client connected from 192.168.65.1:48737 as auto-AFC588D6-353A-FA68-E80E-E9386B882C2A (p4, c1, k60).
+1774129309: New client connected from 192.168.65.1:21825 as auto-54854A27-A06E-3BE2-4156-20C73256B682 (p4, c1, k60).
+1774129309: New client connected from 192.168.65.1:63265 as auto-B53CD981-739B-2599-244A-C1C38A6FE81E (p4, c1, k60).
+1774129309: New client connected from 192.168.65.1:25574 as auto-5632406D-F45B-6D83-E00A-04F4CB229B76 (p4, c1, k60).
+1774129309: New client connected from 192.168.65.1:32090 as auto-15D14A2C-51FE-8C5C-AF87-6DB274F4451B (p4, c1, k60).
+1774129309: New client connected from 192.168.65.1:30213 as auto-782AA3D5-1991-3D03-84AB-EB05DB266968 (p4, c1, k60).
+1774129309: New client connected from 192.168.65.1:56778 as auto-0BBBEE20-0A1D-8E3E-8B81-AB2D89D5B0F4 (p4, c1, k60).
+1774129309: New client connected from 192.168.65.1:53825 as auto-875D16CC-95B6-7C83-94E1-25756B0DD230 (p4, c1, k60).
+1774129310: New connection from 192.168.65.1:32150 on port 1883.
+1774129310: New client connected from 192.168.65.1:32150 as auto-DA99C5E9-7A21-838A-E47A-3A341F182D7D (p4, c1, k60).
+1774130337: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774130885: Client auto-DA99C5E9-7A21-838A-E47A-3A341F182D7D [192.168.65.1:32150] disconnected.
+1774130885: Client auto-782AA3D5-1991-3D03-84AB-EB05DB266968 [192.168.65.1:30213] disconnected: connection closed by client.
+1774130885: Client auto-AFC588D6-353A-FA68-E80E-E9386B882C2A [192.168.65.1:48737] disconnected: connection closed by client.
+1774130885: Client auto-0BBBEE20-0A1D-8E3E-8B81-AB2D89D5B0F4 [192.168.65.1:56778] disconnected: connection closed by client.
+1774130885: Client auto-875D16CC-95B6-7C83-94E1-25756B0DD230 [192.168.65.1:53825] disconnected: connection closed by client.
+1774130885: Client auto-5632406D-F45B-6D83-E00A-04F4CB229B76 [192.168.65.1:25574] disconnected: connection closed by client.
+1774130885: Client auto-54854A27-A06E-3BE2-4156-20C73256B682 [192.168.65.1:21825] disconnected: connection closed by client.
+1774130885: Client auto-F34C45F3-250E-70F4-B669-1A927335FE45 [192.168.65.1:41519] disconnected: connection closed by client.
+1774130885: Client auto-B53CD981-739B-2599-244A-C1C38A6FE81E [192.168.65.1:63265] disconnected: connection closed by client.
+1774130885: Client auto-27901512-4F66-CCE4-4906-95F446F535E3 [192.168.65.1:43450] disconnected: connection closed by client.
+1774130885: Client auto-6EFC9260-F510-A52E-86A2-E2A3609EAC5D [192.168.65.1:43135] disconnected: connection closed by client.
+1774130885: Client auto-15D14A2C-51FE-8C5C-AF87-6DB274F4451B [192.168.65.1:32090] disconnected: connection closed by client.
+1774130885: Client auto-38FAE4E9-D639-26CF-4A60-142218541279 [192.168.65.1:48976] disconnected: connection closed by client.
+1774132138: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774132471: New connection from 192.168.65.1:55041 on port 1883.
+1774132471: New client connected from 192.168.65.1:55041 as auto-4CE42735-E8F8-EC90-A85A-6C36C18585FB (p4, c1, k60).
+1774132471: New connection from 192.168.65.1:34788 on port 1883.
+1774132471: New client connected from 192.168.65.1:34788 as auto-2DCC5B43-9435-6CE8-967A-2DA5B92682B8 (p4, c1, k60).
+1774132472: New connection from 192.168.65.1:35470 on port 1883.
+1774132472: New connection from 192.168.65.1:60967 on port 1883.
+1774132472: New connection from 192.168.65.1:64344 on port 1883.
+1774132472: New connection from 192.168.65.1:63939 on port 1883.
+1774132472: New connection from 192.168.65.1:22761 on port 1883.
+1774132472: New connection from 192.168.65.1:17285 on port 1883.
+1774132472: New connection from 192.168.65.1:21711 on port 1883.
+1774132472: New connection from 192.168.65.1:54117 on port 1883.
+1774132472: New connection from 192.168.65.1:63704 on port 1883.
+1774132472: New connection from 192.168.65.1:50243 on port 1883.
+1774132472: New client connected from 192.168.65.1:35470 as auto-90B26634-9FC5-F6C4-B310-07D459A0F0B1 (p4, c1, k60).
+1774132472: New client connected from 192.168.65.1:60967 as auto-47CF34E1-FEDB-FBE1-A394-B04E2AD53222 (p4, c1, k60).
+1774132472: New client connected from 192.168.65.1:64344 as auto-7E549628-08BD-2E15-9E40-F8587F957C02 (p4, c1, k60).
+1774132472: New client connected from 192.168.65.1:63939 as auto-BBD38C2C-E894-47F5-3841-89E8DD7BE336 (p4, c1, k60).
+1774132472: New client connected from 192.168.65.1:22761 as auto-90E0196B-0938-17BF-EBB8-C65706E5755F (p4, c1, k60).
+1774132472: New client connected from 192.168.65.1:17285 as auto-694D1214-A5B0-A90C-9A5C-4A003C76729E (p4, c1, k60).
+1774132472: New client connected from 192.168.65.1:21711 as auto-05EE9A59-D1BB-E5A3-42E1-15981A1F60D0 (p4, c1, k60).
+1774132472: New client connected from 192.168.65.1:54117 as auto-58A045A3-11A4-62B1-70FF-33E7B53B1DB5 (p4, c1, k60).
+1774132472: New client connected from 192.168.65.1:63704 as auto-DF1AEF43-7438-CD68-6868-773E4EB631C1 (p4, c1, k60).
+1774132472: New client connected from 192.168.65.1:50243 as auto-9725EA08-2812-44AE-70B8-1F0983FDF92E (p4, c1, k60).
+1774132473: New connection from 192.168.65.1:16954 on port 1883.
+1774132473: New client connected from 192.168.65.1:16954 as auto-0780F49B-6827-8759-6132-950C0B519F21 (p4, c1, k60).
+1774132480: Client auto-0780F49B-6827-8759-6132-950C0B519F21 [192.168.65.1:16954] disconnected.
+1774132480: Client auto-694D1214-A5B0-A90C-9A5C-4A003C76729E [192.168.65.1:17285] disconnected: connection closed by client.
+1774132480: Client auto-4CE42735-E8F8-EC90-A85A-6C36C18585FB [192.168.65.1:55041] disconnected: connection closed by client.
+1774132480: Client auto-58A045A3-11A4-62B1-70FF-33E7B53B1DB5 [192.168.65.1:54117] disconnected: connection closed by client.
+1774132480: Client auto-2DCC5B43-9435-6CE8-967A-2DA5B92682B8 [192.168.65.1:34788] disconnected: connection closed by client.
+1774132480: Client auto-90E0196B-0938-17BF-EBB8-C65706E5755F [192.168.65.1:22761] disconnected: connection closed by client.
+1774132480: Client auto-05EE9A59-D1BB-E5A3-42E1-15981A1F60D0 [192.168.65.1:21711] disconnected: connection closed by client.
+1774132480: Client auto-DF1AEF43-7438-CD68-6868-773E4EB631C1 [192.168.65.1:63704] disconnected: connection closed by client.
+1774132480: Client auto-9725EA08-2812-44AE-70B8-1F0983FDF92E [192.168.65.1:50243] disconnected: connection closed by client.
+1774132480: Client auto-BBD38C2C-E894-47F5-3841-89E8DD7BE336 [192.168.65.1:63939] disconnected: connection closed by client.
+1774132480: Client auto-90B26634-9FC5-F6C4-B310-07D459A0F0B1 [192.168.65.1:35470] disconnected: connection closed by client.
+1774132480: Client auto-7E549628-08BD-2E15-9E40-F8587F957C02 [192.168.65.1:64344] disconnected: connection closed by client.
+1774132480: Client auto-47CF34E1-FEDB-FBE1-A394-B04E2AD53222 [192.168.65.1:60967] disconnected: connection closed by client.
+1774132547: New connection from 192.168.65.1:38491 on port 1883.
+1774132547: New client connected from 192.168.65.1:38491 as auto-27521D33-3260-96A2-5BCB-922DA6F2A4B5 (p4, c1, k60).
+1774132547: New connection from 192.168.65.1:16362 on port 1883.
+1774132547: New client connected from 192.168.65.1:16362 as auto-E787B51B-8321-68A6-B5EA-AC2004B1AF56 (p4, c1, k60).
+1774132548: New connection from 192.168.65.1:51256 on port 1883.
+1774132548: New connection from 192.168.65.1:37204 on port 1883.
+1774132548: New connection from 192.168.65.1:45147 on port 1883.
+1774132548: New connection from 192.168.65.1:49421 on port 1883.
+1774132548: New connection from 192.168.65.1:18811 on port 1883.
+1774132548: New connection from 192.168.65.1:31343 on port 1883.
+1774132548: New connection from 192.168.65.1:57799 on port 1883.
+1774132548: New connection from 192.168.65.1:18654 on port 1883.
+1774132548: New connection from 192.168.65.1:36517 on port 1883.
+1774132548: New connection from 192.168.65.1:33561 on port 1883.
+1774132548: New client connected from 192.168.65.1:51256 as auto-60750DA9-21A3-249F-4453-ED1CA84F3477 (p4, c1, k60).
+1774132548: New client connected from 192.168.65.1:37204 as auto-9D27CD78-3DEC-F38D-72AC-E3111D37C756 (p4, c1, k60).
+1774132548: New client connected from 192.168.65.1:45147 as auto-0AAE6D2B-E93A-2525-B5BD-F03DC1834F5B (p4, c1, k60).
+1774132548: New client connected from 192.168.65.1:49421 as auto-5E75DE40-89A6-E324-C6CF-378792E97DB6 (p4, c1, k60).
+1774132548: New client connected from 192.168.65.1:18811 as auto-6AB44B62-3E28-947B-C8FF-49AEF6008997 (p4, c1, k60).
+1774132548: New client connected from 192.168.65.1:31343 as auto-F8EC03BF-7FC7-7407-F37D-7003C5E3EA4B (p4, c1, k60).
+1774132548: New client connected from 192.168.65.1:57799 as auto-8875C64E-A9BB-11B3-774D-D437AD9D9B7F (p4, c1, k60).
+1774132548: New client connected from 192.168.65.1:18654 as auto-7C494F51-E262-F165-33F8-ACD076458CF8 (p4, c1, k60).
+1774132548: New client connected from 192.168.65.1:36517 as auto-35ED45AA-9ACF-2F12-3712-1CE7C96B6ED5 (p4, c1, k60).
+1774132548: New client connected from 192.168.65.1:33561 as auto-91A53265-38A8-5F27-FD7E-77F15C7E5610 (p4, c1, k60).
+1774132549: New connection from 192.168.65.1:55444 on port 1883.
+1774132549: New client connected from 192.168.65.1:55444 as auto-88BFDBB8-8C63-9D2F-32BA-3221580FF894 (p4, c1, k60).
+1774132564: Client auto-88BFDBB8-8C63-9D2F-32BA-3221580FF894 [192.168.65.1:55444] disconnected.
+1774132564: Client auto-91A53265-38A8-5F27-FD7E-77F15C7E5610 [192.168.65.1:33561] disconnected: connection closed by client.
+1774132564: Client auto-27521D33-3260-96A2-5BCB-922DA6F2A4B5 [192.168.65.1:38491] disconnected: connection closed by client.
+1774132564: Client auto-60750DA9-21A3-249F-4453-ED1CA84F3477 [192.168.65.1:51256] disconnected: connection closed by client.
+1774132564: Client auto-E787B51B-8321-68A6-B5EA-AC2004B1AF56 [192.168.65.1:16362] disconnected: connection closed by client.
+1774132564: Client auto-F8EC03BF-7FC7-7407-F37D-7003C5E3EA4B [192.168.65.1:31343] disconnected: connection closed by client.
+1774132564: Client auto-6AB44B62-3E28-947B-C8FF-49AEF6008997 [192.168.65.1:18811] disconnected: connection closed by client.
+1774132564: Client auto-35ED45AA-9ACF-2F12-3712-1CE7C96B6ED5 [192.168.65.1:36517] disconnected: connection closed by client.
+1774132564: Client auto-9D27CD78-3DEC-F38D-72AC-E3111D37C756 [192.168.65.1:37204] disconnected: connection closed by client.
+1774132564: Client auto-8875C64E-A9BB-11B3-774D-D437AD9D9B7F [192.168.65.1:57799] disconnected: connection closed by client.
+1774132564: Client auto-0AAE6D2B-E93A-2525-B5BD-F03DC1834F5B [192.168.65.1:45147] disconnected: connection closed by client.
+1774132564: Client auto-5E75DE40-89A6-E324-C6CF-378792E97DB6 [192.168.65.1:49421] disconnected: connection closed by client.
+1774132564: Client auto-7C494F51-E262-F165-33F8-ACD076458CF8 [192.168.65.1:18654] disconnected: connection closed by client.
+1774132617: New connection from 192.168.65.1:17629 on port 1883.
+1774132617: New client connected from 192.168.65.1:17629 as auto-F6156008-528D-0F71-EE25-BCE369A3526D (p4, c1, k60).
+1774132617: New connection from 192.168.65.1:60357 on port 1883.
+1774132617: New client connected from 192.168.65.1:60357 as auto-ED04F8FD-249D-25B3-E90B-71FC31D9B0EA (p4, c1, k60).
+1774132618: New connection from 192.168.65.1:52635 on port 1883.
+1774132618: New connection from 192.168.65.1:40421 on port 1883.
+1774132618: New connection from 192.168.65.1:36225 on port 1883.
+1774132618: New connection from 192.168.65.1:63765 on port 1883.
+1774132618: New connection from 192.168.65.1:56628 on port 1883.
+1774132618: New connection from 192.168.65.1:63852 on port 1883.
+1774132618: New connection from 192.168.65.1:22874 on port 1883.
+1774132618: New connection from 192.168.65.1:59760 on port 1883.
+1774132618: New connection from 192.168.65.1:18624 on port 1883.
+1774132618: New connection from 192.168.65.1:29289 on port 1883.
+1774132618: New client connected from 192.168.65.1:52635 as auto-F01777C9-A025-0960-55F2-6DC08D09930F (p4, c1, k60).
+1774132618: New client connected from 192.168.65.1:40421 as auto-E0098AE8-618C-7887-8232-ECB2CE80BCFF (p4, c1, k60).
+1774132618: New client connected from 192.168.65.1:36225 as auto-6F1B029D-5F50-0D5B-60E8-A87DADEFB71C (p4, c1, k60).
+1774132618: New client connected from 192.168.65.1:63765 as auto-ED66113D-08B9-A0CC-FB2B-F397CBEDF531 (p4, c1, k60).
+1774132618: New client connected from 192.168.65.1:56628 as auto-691DF96A-8BFA-6ABE-84D3-E2F5C9550BEB (p4, c1, k60).
+1774132618: New client connected from 192.168.65.1:63852 as auto-2B8A9BEB-1F55-BEA0-8400-82A665351694 (p4, c1, k60).
+1774132618: New client connected from 192.168.65.1:22874 as auto-4DBC8C6F-B7E7-50EF-B380-AF3465A484C0 (p4, c1, k60).
+1774132618: New client connected from 192.168.65.1:59760 as auto-1EB0A7C6-6D23-3070-A8D6-3BC26105EFFF (p4, c1, k60).
+1774132618: New client connected from 192.168.65.1:18624 as auto-7DD9394F-147B-2C0C-31ED-063032ECD76B (p4, c1, k60).
+1774132618: New client connected from 192.168.65.1:29289 as auto-607F715F-309B-AF77-87CD-D3989D5E71F3 (p4, c1, k60).
+1774132619: New connection from 192.168.65.1:54308 on port 1883.
+1774132619: New client connected from 192.168.65.1:54308 as auto-4051C6A3-4A9A-D600-AB5D-2041A8A739FD (p4, c1, k60).
+1774132625: Client auto-4051C6A3-4A9A-D600-AB5D-2041A8A739FD [192.168.65.1:54308] disconnected.
+1774132625: Client auto-F6156008-528D-0F71-EE25-BCE369A3526D [192.168.65.1:17629] disconnected: connection closed by client.
+1774132625: Client auto-ED04F8FD-249D-25B3-E90B-71FC31D9B0EA [192.168.65.1:60357] disconnected: connection closed by client.
+1774132625: Client auto-E0098AE8-618C-7887-8232-ECB2CE80BCFF [192.168.65.1:40421] disconnected: connection closed by client.
+1774132625: Client auto-691DF96A-8BFA-6ABE-84D3-E2F5C9550BEB [192.168.65.1:56628] disconnected: connection closed by client.
+1774132625: Client auto-F01777C9-A025-0960-55F2-6DC08D09930F [192.168.65.1:52635] disconnected: connection closed by client.
+1774132625: Client auto-6F1B029D-5F50-0D5B-60E8-A87DADEFB71C [192.168.65.1:36225] disconnected: connection closed by client.
+1774132625: Client auto-ED66113D-08B9-A0CC-FB2B-F397CBEDF531 [192.168.65.1:63765] disconnected: connection closed by client.
+1774132625: Client auto-1EB0A7C6-6D23-3070-A8D6-3BC26105EFFF [192.168.65.1:59760] disconnected: connection closed by client.
+1774132625: Client auto-7DD9394F-147B-2C0C-31ED-063032ECD76B [192.168.65.1:18624] disconnected: connection closed by client.
+1774132625: Client auto-607F715F-309B-AF77-87CD-D3989D5E71F3 [192.168.65.1:29289] disconnected: connection closed by client.
+1774132625: Client auto-2B8A9BEB-1F55-BEA0-8400-82A665351694 [192.168.65.1:63852] disconnected: connection closed by client.
+1774132625: Client auto-4DBC8C6F-B7E7-50EF-B380-AF3465A484C0 [192.168.65.1:22874] disconnected: connection closed by client.
+1774132764: New connection from 192.168.65.1:20746 on port 1883.
+1774132764: New client connected from 192.168.65.1:20746 as auto-9C76590C-D0FB-02D0-2190-67BE99D811FC (p4, c1, k60).
+1774132765: New connection from 192.168.65.1:17114 on port 1883.
+1774132765: New client connected from 192.168.65.1:17114 as auto-1B19956C-132C-754F-6A3B-E221DCFA8C9B (p4, c1, k60).
+1774132765: New connection from 192.168.65.1:17193 on port 1883.
+1774132765: New connection from 192.168.65.1:19298 on port 1883.
+1774132765: New connection from 192.168.65.1:46529 on port 1883.
+1774132765: New connection from 192.168.65.1:33817 on port 1883.
+1774132765: New connection from 192.168.65.1:50233 on port 1883.
+1774132765: New connection from 192.168.65.1:46193 on port 1883.
+1774132765: New connection from 192.168.65.1:53306 on port 1883.
+1774132765: New connection from 192.168.65.1:45102 on port 1883.
+1774132765: New connection from 192.168.65.1:56567 on port 1883.
+1774132765: New connection from 192.168.65.1:55556 on port 1883.
+1774132765: New client connected from 192.168.65.1:17193 as auto-D6A779D7-A114-4904-EE68-A61FD7D71DD9 (p4, c1, k60).
+1774132765: New client connected from 192.168.65.1:19298 as auto-A0CE2F29-67FC-F1F7-AF2E-2024EC52BB71 (p4, c1, k60).
+1774132765: New client connected from 192.168.65.1:46529 as auto-414D2EEA-091E-4C36-8971-6FAF10944091 (p4, c1, k60).
+1774132765: New client connected from 192.168.65.1:33817 as auto-AABD5628-5AD6-34AA-2CDA-65037C5EB8C0 (p4, c1, k60).
+1774132765: New client connected from 192.168.65.1:50233 as auto-C3FB576D-D3C9-F6DE-8018-C65ED24AD69A (p4, c1, k60).
+1774132765: New client connected from 192.168.65.1:46193 as auto-3D263E2C-554F-0C56-5E71-304832B71BBC (p4, c1, k60).
+1774132765: New client connected from 192.168.65.1:53306 as auto-B5A8A8D2-A90C-B39D-4E85-06A6E542A373 (p4, c1, k60).
+1774132765: New client connected from 192.168.65.1:45102 as auto-86767A6F-EAF1-7EDB-E800-2AC2A5BA3097 (p4, c1, k60).
+1774132765: New client connected from 192.168.65.1:56567 as auto-DD2BAF44-EDA7-2C80-95F7-E5D31247B796 (p4, c1, k60).
+1774132765: New client connected from 192.168.65.1:55556 as auto-E8F2F465-B0AB-EF21-4CC1-183AA8DA1F46 (p4, c1, k60).
+1774132766: New connection from 192.168.65.1:35998 on port 1883.
+1774132766: New client connected from 192.168.65.1:35998 as auto-9DC082C6-3908-4C29-55FC-EE80D3FB8ED9 (p4, c1, k60).
+1774132852: Client auto-9DC082C6-3908-4C29-55FC-EE80D3FB8ED9 [192.168.65.1:35998] disconnected.
+1774132852: Client auto-AABD5628-5AD6-34AA-2CDA-65037C5EB8C0 [192.168.65.1:33817] disconnected: connection closed by client.
+1774132852: Client auto-9C76590C-D0FB-02D0-2190-67BE99D811FC [192.168.65.1:20746] disconnected: connection closed by client.
+1774132852: Client auto-1B19956C-132C-754F-6A3B-E221DCFA8C9B [192.168.65.1:17114] disconnected: connection closed by client.
+1774132852: Client auto-414D2EEA-091E-4C36-8971-6FAF10944091 [192.168.65.1:46529] disconnected: connection closed by client.
+1774132852: Client auto-B5A8A8D2-A90C-B39D-4E85-06A6E542A373 [192.168.65.1:53306] disconnected: connection closed by client.
+1774132852: Client auto-3D263E2C-554F-0C56-5E71-304832B71BBC [192.168.65.1:46193] disconnected: connection closed by client.
+1774132852: Client auto-C3FB576D-D3C9-F6DE-8018-C65ED24AD69A [192.168.65.1:50233] disconnected: connection closed by client.
+1774132852: Client auto-86767A6F-EAF1-7EDB-E800-2AC2A5BA3097 [192.168.65.1:45102] disconnected: connection closed by client.
+1774132852: Client auto-A0CE2F29-67FC-F1F7-AF2E-2024EC52BB71 [192.168.65.1:19298] disconnected: connection closed by client.
+1774132852: Client auto-E8F2F465-B0AB-EF21-4CC1-183AA8DA1F46 [192.168.65.1:55556] disconnected: connection closed by client.
+1774132852: Client auto-D6A779D7-A114-4904-EE68-A61FD7D71DD9 [192.168.65.1:17193] disconnected: connection closed by client.
+1774132852: Client auto-DD2BAF44-EDA7-2C80-95F7-E5D31247B796 [192.168.65.1:56567] disconnected: connection closed by client.
+1774133309: New connection from 192.168.65.1:34232 on port 1883.
+1774133310: New client connected from 192.168.65.1:34232 as auto-FBCD7A29-5AFC-D86C-2EE3-8794A59ED661 (p4, c1, k60).
+1774133310: New connection from 192.168.65.1:37703 on port 1883.
+1774133310: New client connected from 192.168.65.1:37703 as auto-802DD7F5-8F85-C40D-A0CC-E5C8B98894C9 (p4, c1, k60).
+1774133310: New connection from 192.168.65.1:33165 on port 1883.
+1774133310: New connection from 192.168.65.1:32744 on port 1883.
+1774133310: New connection from 192.168.65.1:39281 on port 1883.
+1774133310: New connection from 192.168.65.1:25866 on port 1883.
+1774133310: New connection from 192.168.65.1:20368 on port 1883.
+1774133310: New connection from 192.168.65.1:64746 on port 1883.
+1774133310: New connection from 192.168.65.1:59365 on port 1883.
+1774133310: New connection from 192.168.65.1:18308 on port 1883.
+1774133310: New connection from 192.168.65.1:57787 on port 1883.
+1774133310: New connection from 192.168.65.1:50626 on port 1883.
+1774133310: New client connected from 192.168.65.1:33165 as auto-D56AAE21-C84B-9D72-57BE-73BDAA166BC4 (p4, c1, k60).
+1774133310: New client connected from 192.168.65.1:32744 as auto-891B2C73-04AF-643F-69CD-2BE239D059F0 (p4, c1, k60).
+1774133310: New client connected from 192.168.65.1:39281 as auto-C279E6E5-F6D3-4172-A36D-279C94918FA0 (p4, c1, k60).
+1774133310: New client connected from 192.168.65.1:25866 as auto-3A0A943F-5353-F032-50E0-EF9554D42CE4 (p4, c1, k60).
+1774133310: New client connected from 192.168.65.1:20368 as auto-308B84EC-20A4-3714-489D-1EC4D5FD2221 (p4, c1, k60).
+1774133310: New client connected from 192.168.65.1:64746 as auto-C75C3928-F9F4-0B03-3732-94D0791213AF (p4, c1, k60).
+1774133310: New client connected from 192.168.65.1:59365 as auto-0C3C950E-D60D-CAED-D0BF-B7BEC4032FFD (p4, c1, k60).
+1774133310: New client connected from 192.168.65.1:18308 as auto-286B86BD-3C33-4231-4F56-979E3A998977 (p4, c1, k60).
+1774133310: New client connected from 192.168.65.1:57787 as auto-B70859DE-B6B8-BAC6-DDF8-B25FFA6A4F80 (p4, c1, k60).
+1774133310: New client connected from 192.168.65.1:50626 as auto-A55D1773-292A-BEE9-29FC-4BA64C85B2F8 (p4, c1, k60).
+1774133312: New connection from 192.168.65.1:32361 on port 1883.
+1774133312: New client connected from 192.168.65.1:32361 as auto-F6F68C19-41CA-2931-133B-A3F97F1C08B4 (p4, c1, k60).
+1774133939: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774134405: Client auto-F6F68C19-41CA-2931-133B-A3F97F1C08B4 [192.168.65.1:32361] disconnected.
+1774134405: Client auto-B70859DE-B6B8-BAC6-DDF8-B25FFA6A4F80 [192.168.65.1:57787] disconnected: connection closed by client.
+1774134405: Client auto-D56AAE21-C84B-9D72-57BE-73BDAA166BC4 [192.168.65.1:33165] disconnected: connection closed by client.
+1774134405: Client auto-802DD7F5-8F85-C40D-A0CC-E5C8B98894C9 [192.168.65.1:37703] disconnected: connection closed by client.
+1774134405: Client auto-0C3C950E-D60D-CAED-D0BF-B7BEC4032FFD [192.168.65.1:59365] disconnected: connection closed by client.
+1774134405: Client auto-3A0A943F-5353-F032-50E0-EF9554D42CE4 [192.168.65.1:25866] disconnected: connection closed by client.
+1774134405: Client auto-286B86BD-3C33-4231-4F56-979E3A998977 [192.168.65.1:18308] disconnected: connection closed by client.
+1774134405: Client auto-891B2C73-04AF-643F-69CD-2BE239D059F0 [192.168.65.1:32744] disconnected: connection closed by client.
+1774134405: Client auto-C279E6E5-F6D3-4172-A36D-279C94918FA0 [192.168.65.1:39281] disconnected: connection closed by client.
+1774134405: Client auto-A55D1773-292A-BEE9-29FC-4BA64C85B2F8 [192.168.65.1:50626] disconnected: connection closed by client.
+1774134405: Client auto-C75C3928-F9F4-0B03-3732-94D0791213AF [192.168.65.1:64746] disconnected: connection closed by client.
+1774134405: Client auto-308B84EC-20A4-3714-489D-1EC4D5FD2221 [192.168.65.1:20368] disconnected: connection closed by client.
+1774134405: Client auto-FBCD7A29-5AFC-D86C-2EE3-8794A59ED661 [192.168.65.1:34232] disconnected: connection closed by client.
+1774135076: New connection from 192.168.65.1:62082 on port 1883.
+1774135076: New client connected from 192.168.65.1:62082 as auto-DE55094F-1058-2546-95B9-B8539D3C78A2 (p4, c1, k60).
+1774135076: New connection from 192.168.65.1:41032 on port 1883.
+1774135076: New client connected from 192.168.65.1:41032 as auto-BBBC5B55-04D0-CFD1-0949-CC6B1B546B97 (p4, c1, k60).
+1774135077: New connection from 192.168.65.1:42183 on port 1883.
+1774135077: New connection from 192.168.65.1:56198 on port 1883.
+1774135077: New connection from 192.168.65.1:51954 on port 1883.
+1774135077: New connection from 192.168.65.1:25882 on port 1883.
+1774135077: New connection from 192.168.65.1:18129 on port 1883.
+1774135077: New connection from 192.168.65.1:41252 on port 1883.
+1774135077: New client connected from 192.168.65.1:42183 as auto-75222053-6767-FA90-EB37-A41DF4AABFC8 (p4, c1, k60).
+1774135077: New client connected from 192.168.65.1:56198 as auto-025270BF-1DE3-6CC1-00AB-E18F4E6DE726 (p4, c1, k60).
+1774135077: New client connected from 192.168.65.1:51954 as auto-DFB135AE-963F-25A0-4B4F-7CAD8B2300C6 (p4, c1, k60).
+1774135077: New client connected from 192.168.65.1:25882 as auto-893A79DB-A088-04A0-48CB-3466678962E2 (p4, c1, k60).
+1774135077: New client connected from 192.168.65.1:18129 as auto-737ADD85-9FCA-E63A-3EF5-519C13CD235B (p4, c1, k60).
+1774135077: New client connected from 192.168.65.1:41252 as auto-3A128F3E-39B8-E61C-56C0-922D9647376F (p4, c1, k60).
+1774135077: New connection from 192.168.65.1:26408 on port 1883.
+1774135077: New connection from 192.168.65.1:34047 on port 1883.
+1774135077: New connection from 192.168.65.1:21172 on port 1883.
+1774135077: New connection from 192.168.65.1:59258 on port 1883.
+1774135077: New client connected from 192.168.65.1:26408 as auto-64DC003B-7592-E267-3A2F-A09DFD689E96 (p4, c1, k60).
+1774135077: New client connected from 192.168.65.1:34047 as auto-EB55CD9B-8619-1AEA-1804-C72280ED2B32 (p4, c1, k60).
+1774135077: New client connected from 192.168.65.1:21172 as auto-8432F003-3B6B-F90A-5459-BD1D13743D72 (p4, c1, k60).
+1774135077: New client connected from 192.168.65.1:59258 as auto-23A02A08-F330-4266-A5FB-A8D45BF32837 (p4, c1, k60).
+1774135078: New connection from 192.168.65.1:24706 on port 1883.
+1774135078: New client connected from 192.168.65.1:24706 as auto-E6B3505F-070D-14F5-54F5-B95D5892F980 (p4, c1, k60).
+1774135685: Client auto-E6B3505F-070D-14F5-54F5-B95D5892F980 [192.168.65.1:24706] disconnected.
+1774135685: Client auto-23A02A08-F330-4266-A5FB-A8D45BF32837 [192.168.65.1:59258] disconnected: connection closed by client.
+1774135685: Client auto-EB55CD9B-8619-1AEA-1804-C72280ED2B32 [192.168.65.1:34047] disconnected: connection closed by client.
+1774135685: Client auto-75222053-6767-FA90-EB37-A41DF4AABFC8 [192.168.65.1:42183] disconnected: connection closed by client.
+1774135685: Client auto-3A128F3E-39B8-E61C-56C0-922D9647376F [192.168.65.1:41252] disconnected: connection closed by client.
+1774135685: Client auto-64DC003B-7592-E267-3A2F-A09DFD689E96 [192.168.65.1:26408] disconnected: connection closed by client.
+1774135685: Client auto-DFB135AE-963F-25A0-4B4F-7CAD8B2300C6 [192.168.65.1:51954] disconnected: connection closed by client.
+1774135685: Client auto-8432F003-3B6B-F90A-5459-BD1D13743D72 [192.168.65.1:21172] disconnected: connection closed by client.
+1774135685: Client auto-025270BF-1DE3-6CC1-00AB-E18F4E6DE726 [192.168.65.1:56198] disconnected: connection closed by client.
+1774135685: Client auto-737ADD85-9FCA-E63A-3EF5-519C13CD235B [192.168.65.1:18129] disconnected: connection closed by client.
+1774135685: Client auto-893A79DB-A088-04A0-48CB-3466678962E2 [192.168.65.1:25882] disconnected: connection closed by client.
+1774135685: Client auto-DE55094F-1058-2546-95B9-B8539D3C78A2 [192.168.65.1:62082] disconnected: connection closed by client.
+1774135685: Client auto-BBBC5B55-04D0-CFD1-0949-CC6B1B546B97 [192.168.65.1:41032] disconnected: connection closed by client.
+1774135740: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774136630: New connection from 192.168.65.1:49151 on port 1883.
+1774136630: New client connected from 192.168.65.1:49151 as auto-1B14D679-1D71-DCE9-B053-6BCE41582E30 (p4, c1, k60).
+1774136631: New connection from 192.168.65.1:60860 on port 1883.
+1774136631: New client connected from 192.168.65.1:60860 as auto-B3ADBBB9-B6A2-EC09-73CB-BAA36FD1CA22 (p4, c1, k60).
+1774136631: New connection from 192.168.65.1:24242 on port 1883.
+1774136631: New connection from 192.168.65.1:29925 on port 1883.
+1774136631: New connection from 192.168.65.1:38791 on port 1883.
+1774136631: New connection from 192.168.65.1:26353 on port 1883.
+1774136631: New connection from 192.168.65.1:37893 on port 1883.
+1774136631: New connection from 192.168.65.1:42212 on port 1883.
+1774136631: New connection from 192.168.65.1:42342 on port 1883.
+1774136631: New connection from 192.168.65.1:59330 on port 1883.
+1774136631: New connection from 192.168.65.1:20845 on port 1883.
+1774136631: New connection from 192.168.65.1:18977 on port 1883.
+1774136631: New client connected from 192.168.65.1:24242 as auto-F0035C34-8700-CC94-FF6B-CD044D971210 (p4, c1, k60).
+1774136631: New client connected from 192.168.65.1:38791 as auto-D8BA68C0-6467-E1E6-416E-53AEE073CDDF (p4, c1, k60).
+1774136631: New client connected from 192.168.65.1:26353 as auto-7E676679-8252-1B4D-CD0D-ED72048D08E8 (p4, c1, k60).
+1774136631: New client connected from 192.168.65.1:29925 as auto-E6DD80F2-623E-5B33-793D-0B588D065E97 (p4, c1, k60).
+1774136631: New client connected from 192.168.65.1:37893 as auto-D07C77CE-E9FC-75F4-16A9-47F97B419B50 (p4, c1, k60).
+1774136631: New client connected from 192.168.65.1:42212 as auto-5245BB93-A587-3CE3-2EC8-C7241859F551 (p4, c1, k60).
+1774136631: New client connected from 192.168.65.1:42342 as auto-BB93A33B-035F-8BBC-3ABA-DB8268DD7F05 (p4, c1, k60).
+1774136631: New client connected from 192.168.65.1:59330 as auto-3861D52D-866D-14A8-8131-1153CFEEB5B9 (p4, c1, k60).
+1774136631: New client connected from 192.168.65.1:20845 as auto-CFB3BCEE-9033-E71D-7358-442E94E484CA (p4, c1, k60).
+1774136631: New client connected from 192.168.65.1:18977 as auto-882D330B-CEEB-FC9C-D928-000ADD4147D3 (p4, c1, k60).
+1774136632: New connection from 192.168.65.1:19891 on port 1883.
+1774136632: New client connected from 192.168.65.1:19891 as auto-6A267264-D82A-46C0-57A3-7B5669FA56E3 (p4, c1, k60).
+1774136901: Client auto-6A267264-D82A-46C0-57A3-7B5669FA56E3 [192.168.65.1:19891] disconnected.
+1774136901: Client auto-882D330B-CEEB-FC9C-D928-000ADD4147D3 [192.168.65.1:18977] disconnected: connection closed by client.
+1774136901: Client auto-1B14D679-1D71-DCE9-B053-6BCE41582E30 [192.168.65.1:49151] disconnected: connection closed by client.
+1774136901: Client auto-B3ADBBB9-B6A2-EC09-73CB-BAA36FD1CA22 [192.168.65.1:60860] disconnected: connection closed by client.
+1774136901: Client auto-5245BB93-A587-3CE3-2EC8-C7241859F551 [192.168.65.1:42212] disconnected: connection closed by client.
+1774136901: Client auto-3861D52D-866D-14A8-8131-1153CFEEB5B9 [192.168.65.1:59330] disconnected: connection closed by client.
+1774136901: Client auto-7E676679-8252-1B4D-CD0D-ED72048D08E8 [192.168.65.1:26353] disconnected: connection closed by client.
+1774136901: Client auto-D07C77CE-E9FC-75F4-16A9-47F97B419B50 [192.168.65.1:37893] disconnected: connection closed by client.
+1774136901: Client auto-F0035C34-8700-CC94-FF6B-CD044D971210 [192.168.65.1:24242] disconnected: connection closed by client.
+1774136901: Client auto-BB93A33B-035F-8BBC-3ABA-DB8268DD7F05 [192.168.65.1:42342] disconnected: connection closed by client.
+1774136901: Client auto-E6DD80F2-623E-5B33-793D-0B588D065E97 [192.168.65.1:29925] disconnected: connection closed by client.
+1774136901: Client auto-D8BA68C0-6467-E1E6-416E-53AEE073CDDF [192.168.65.1:38791] disconnected: connection closed by client.
+1774136901: Client auto-CFB3BCEE-9033-E71D-7358-442E94E484CA [192.168.65.1:20845] disconnected: connection closed by client.
+1774137152: New connection from 192.168.65.1:36326 on port 1883.
+1774137152: New client connected from 192.168.65.1:36326 as auto-40715146-D8C4-A388-745E-A16FB8DC4C95 (p4, c1, k60).
+1774137153: New connection from 192.168.65.1:60465 on port 1883.
+1774137153: New client connected from 192.168.65.1:60465 as auto-65DF40A7-AF75-22D7-B823-860B30183982 (p4, c1, k60).
+1774137153: New connection from 192.168.65.1:22566 on port 1883.
+1774137153: New connection from 192.168.65.1:43453 on port 1883.
+1774137153: New connection from 192.168.65.1:35548 on port 1883.
+1774137153: New connection from 192.168.65.1:20908 on port 1883.
+1774137153: New connection from 192.168.65.1:57055 on port 1883.
+1774137153: New connection from 192.168.65.1:56579 on port 1883.
+1774137153: New connection from 192.168.65.1:46860 on port 1883.
+1774137153: New connection from 192.168.65.1:61234 on port 1883.
+1774137153: New connection from 192.168.65.1:53995 on port 1883.
+1774137153: New connection from 192.168.65.1:45484 on port 1883.
+1774137153: New client connected from 192.168.65.1:22566 as auto-5CB88E94-5340-87CC-ECC7-492A8D87F556 (p4, c1, k60).
+1774137153: New client connected from 192.168.65.1:43453 as auto-577B154C-DAD3-347B-ACBD-A02515EA1A98 (p4, c1, k60).
+1774137153: New client connected from 192.168.65.1:35548 as auto-D2EDEA9D-54F4-B720-AA9A-F4FE36CE3272 (p4, c1, k60).
+1774137153: New client connected from 192.168.65.1:20908 as auto-AACAB2CF-17E0-7FF5-3A8A-936DC693EDE7 (p4, c1, k60).
+1774137153: New client connected from 192.168.65.1:57055 as auto-5E65A565-969B-D345-6C69-7C6EB2A68C02 (p4, c1, k60).
+1774137153: New client connected from 192.168.65.1:56579 as auto-56182E90-9F15-D866-0E38-39B5D3F26BCC (p4, c1, k60).
+1774137153: New client connected from 192.168.65.1:46860 as auto-DA1FF5C6-2A26-34A2-E6E5-AFFC88371DE6 (p4, c1, k60).
+1774137153: New client connected from 192.168.65.1:61234 as auto-89686E0C-02D5-9CB4-B94B-05A07BD0BBA8 (p4, c1, k60).
+1774137153: New client connected from 192.168.65.1:53995 as auto-968E2FE1-58F2-98BC-99AE-A38B5215812A (p4, c1, k60).
+1774137153: New client connected from 192.168.65.1:45484 as auto-9A2F4A50-D34E-4C5A-D648-2EC9A3F23B20 (p4, c1, k60).
+1774137154: New connection from 192.168.65.1:28524 on port 1883.
+1774137154: New client connected from 192.168.65.1:28524 as auto-B119DAA3-C011-D87C-580F-B7A898755371 (p4, c1, k60).
+1774137260: Client auto-B119DAA3-C011-D87C-580F-B7A898755371 [192.168.65.1:28524] disconnected.
+1774137260: Client auto-AACAB2CF-17E0-7FF5-3A8A-936DC693EDE7 [192.168.65.1:20908] disconnected: connection closed by client.
+1774137260: Client auto-DA1FF5C6-2A26-34A2-E6E5-AFFC88371DE6 [192.168.65.1:46860] disconnected: connection closed by client.
+1774137260: Client auto-65DF40A7-AF75-22D7-B823-860B30183982 [192.168.65.1:60465] disconnected: connection closed by client.
+1774137260: Client auto-56182E90-9F15-D866-0E38-39B5D3F26BCC [192.168.65.1:56579] disconnected: connection closed by client.
+1774137260: Client auto-5E65A565-969B-D345-6C69-7C6EB2A68C02 [192.168.65.1:57055] disconnected: connection closed by client.
+1774137260: Client auto-577B154C-DAD3-347B-ACBD-A02515EA1A98 [192.168.65.1:43453] disconnected: connection closed by client.
+1774137260: Client auto-968E2FE1-58F2-98BC-99AE-A38B5215812A [192.168.65.1:53995] disconnected: connection closed by client.
+1774137260: Client auto-89686E0C-02D5-9CB4-B94B-05A07BD0BBA8 [192.168.65.1:61234] disconnected: connection closed by client.
+1774137260: Client auto-5CB88E94-5340-87CC-ECC7-492A8D87F556 [192.168.65.1:22566] disconnected: connection closed by client.
+1774137260: Client auto-9A2F4A50-D34E-4C5A-D648-2EC9A3F23B20 [192.168.65.1:45484] disconnected: connection closed by client.
+1774137260: Client auto-40715146-D8C4-A388-745E-A16FB8DC4C95 [192.168.65.1:36326] disconnected: connection closed by client.
+1774137260: Client auto-D2EDEA9D-54F4-B720-AA9A-F4FE36CE3272 [192.168.65.1:35548] disconnected: connection closed by client.
+1774141420: New connection from 192.168.65.1:43524 on port 1883.
+1774141421: New client connected from 192.168.65.1:43524 as auto-12B59BED-80B1-345D-0AEE-09387922C375 (p4, c1, k60).
+1774141421: New connection from 192.168.65.1:28530 on port 1883.
+1774141421: New client connected from 192.168.65.1:28530 as auto-F17CAC41-E067-56B4-50D8-E31055B32C91 (p4, c1, k60).
+1774141421: New connection from 192.168.65.1:22363 on port 1883.
+1774141421: New connection from 192.168.65.1:21855 on port 1883.
+1774141421: New client connected from 192.168.65.1:22363 as auto-C9DEAAB8-DC59-6A7B-2106-CC68A09A3C8A (p4, c1, k60).
+1774141421: New client connected from 192.168.65.1:21855 as auto-A4869DF9-4517-6F48-C7BF-89F0CBE0A2C7 (p4, c1, k60).
+1774141421: New connection from 192.168.65.1:61823 on port 1883.
+1774141421: New connection from 192.168.65.1:35405 on port 1883.
+1774141421: New connection from 192.168.65.1:54750 on port 1883.
+1774141421: New connection from 192.168.65.1:44161 on port 1883.
+1774141421: New connection from 192.168.65.1:41866 on port 1883.
+1774141421: New connection from 192.168.65.1:21990 on port 1883.
+1774141421: New connection from 192.168.65.1:40728 on port 1883.
+1774141421: New connection from 192.168.65.1:43022 on port 1883.
+1774141421: New client connected from 192.168.65.1:61823 as auto-C2261E13-F553-95E6-2F68-CC96C5353749 (p4, c1, k60).
+1774141421: New client connected from 192.168.65.1:35405 as auto-218AABF9-B792-904A-25CE-CBC6BAFF2E48 (p4, c1, k60).
+1774141421: New client connected from 192.168.65.1:54750 as auto-F3C042D0-44AA-64FF-EBA4-E61DF6270370 (p4, c1, k60).
+1774141421: New client connected from 192.168.65.1:44161 as auto-D88CAA1E-8FDD-7F6C-FAC4-44F0FB589F53 (p4, c1, k60).
+1774141421: New client connected from 192.168.65.1:41866 as auto-618CBB36-8D37-A5CE-3916-90E5D2B720C7 (p4, c1, k60).
+1774141421: New client connected from 192.168.65.1:21990 as auto-308E0073-8CF5-7B45-4AFC-F5A1CC016BB3 (p4, c1, k60).
+1774141421: New client connected from 192.168.65.1:40728 as auto-69E03192-6F4F-1735-680C-007742AB71B0 (p4, c1, k60).
+1774141421: New client connected from 192.168.65.1:43022 as auto-C7F1965D-6B00-9A4E-7B93-7888D2F25292 (p4, c1, k60).
+1774141422: New connection from 192.168.65.1:55619 on port 1883.
+1774141422: New client connected from 192.168.65.1:55619 as auto-57BA9A7D-B24D-FDC1-FF02-C3D12820357F (p4, c1, k60).
+1774141461: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774142045: Client auto-57BA9A7D-B24D-FDC1-FF02-C3D12820357F [192.168.65.1:55619] disconnected.
+1774142045: Client auto-C7F1965D-6B00-9A4E-7B93-7888D2F25292 [192.168.65.1:43022] disconnected: connection closed by client.
+1774142045: Client auto-308E0073-8CF5-7B45-4AFC-F5A1CC016BB3 [192.168.65.1:21990] disconnected: connection closed by client.
+1774142045: Client auto-69E03192-6F4F-1735-680C-007742AB71B0 [192.168.65.1:40728] disconnected: connection closed by client.
+1774142045: Client auto-618CBB36-8D37-A5CE-3916-90E5D2B720C7 [192.168.65.1:41866] disconnected: connection closed by client.
+1774142045: Client auto-C2261E13-F553-95E6-2F68-CC96C5353749 [192.168.65.1:61823] disconnected: connection closed by client.
+1774142045: Client auto-D88CAA1E-8FDD-7F6C-FAC4-44F0FB589F53 [192.168.65.1:44161] disconnected: connection closed by client.
+1774142045: Client auto-218AABF9-B792-904A-25CE-CBC6BAFF2E48 [192.168.65.1:35405] disconnected: connection closed by client.
+1774142045: Client auto-F3C042D0-44AA-64FF-EBA4-E61DF6270370 [192.168.65.1:54750] disconnected: connection closed by client.
+1774142045: Client auto-A4869DF9-4517-6F48-C7BF-89F0CBE0A2C7 [192.168.65.1:21855] disconnected: connection closed by client.
+1774142045: Client auto-C9DEAAB8-DC59-6A7B-2106-CC68A09A3C8A [192.168.65.1:22363] disconnected: connection closed by client.
+1774142045: Client auto-F17CAC41-E067-56B4-50D8-E31055B32C91 [192.168.65.1:28530] disconnected: connection closed by client.
+1774142045: Client auto-12B59BED-80B1-345D-0AEE-09387922C375 [192.168.65.1:43524] disconnected: connection closed by client.
+1774142672: New connection from 192.168.65.1:52915 on port 1883.
+1774142672: New client connected from 192.168.65.1:52915 as auto-0D39DC56-B180-F2B8-DBFC-5A8A31EBBEC9 (p4, c1, k60).
+1774142672: New connection from 192.168.65.1:35252 on port 1883.
+1774142672: New client connected from 192.168.65.1:35252 as auto-F767DBC0-05C6-0205-E929-5344B326A664 (p4, c1, k60).
+1774142673: New connection from 192.168.65.1:38086 on port 1883.
+1774142673: New connection from 192.168.65.1:35475 on port 1883.
+1774142673: New connection from 192.168.65.1:16100 on port 1883.
+1774142673: New connection from 192.168.65.1:40165 on port 1883.
+1774142673: New connection from 192.168.65.1:20429 on port 1883.
+1774142673: New connection from 192.168.65.1:43003 on port 1883.
+1774142673: New connection from 192.168.65.1:31791 on port 1883.
+1774142673: New connection from 192.168.65.1:18189 on port 1883.
+1774142673: New connection from 192.168.65.1:38191 on port 1883.
+1774142673: New connection from 192.168.65.1:57165 on port 1883.
+1774142673: New client connected from 192.168.65.1:38086 as auto-884C295A-2677-270B-3E11-2BD989C8C268 (p4, c1, k60).
+1774142673: New client connected from 192.168.65.1:35475 as auto-3BC1D8BA-77C0-5CBF-4900-157A401CB590 (p4, c1, k60).
+1774142673: New client connected from 192.168.65.1:16100 as auto-BB409475-852C-AED1-3BC9-432511AC7F55 (p4, c1, k60).
+1774142673: New client connected from 192.168.65.1:40165 as auto-74ED6C12-B2CE-D3A3-4EA5-8BEE583A997F (p4, c1, k60).
+1774142673: New client connected from 192.168.65.1:20429 as auto-8A17EE25-0F33-A392-2E08-FD8B970072EA (p4, c1, k60).
+1774142673: New client connected from 192.168.65.1:43003 as auto-1886FE92-D8BD-1F6D-081A-32D1E685C1A2 (p4, c1, k60).
+1774142673: New client connected from 192.168.65.1:31791 as auto-69AF4664-82CF-B9E9-ADB8-726F4ED2DE9D (p4, c1, k60).
+1774142673: New client connected from 192.168.65.1:18189 as auto-13C67E57-9429-7278-21FE-6F3B31EFF7EE (p4, c1, k60).
+1774142673: New client connected from 192.168.65.1:38191 as auto-32244BEF-6DF7-DC3C-7BE0-471C5DDE1416 (p4, c1, k60).
+1774142673: New client connected from 192.168.65.1:57165 as auto-ACD70E76-223E-C700-92EA-C3CA720261EA (p4, c1, k60).
+1774142674: New connection from 192.168.65.1:47961 on port 1883.
+1774142674: New client connected from 192.168.65.1:47961 as auto-F2A28F1B-ABFC-C717-77B2-D30C45831F42 (p4, c1, k60).
+1774143152: Client auto-F767DBC0-05C6-0205-E929-5344B326A664 [192.168.65.1:35252] disconnected: connection closed by client.
+1774143152: Client auto-1886FE92-D8BD-1F6D-081A-32D1E685C1A2 [192.168.65.1:43003] disconnected: connection closed by client.
+1774143152: Client auto-3BC1D8BA-77C0-5CBF-4900-157A401CB590 [192.168.65.1:35475] disconnected: connection closed by client.
+1774143152: Client auto-0D39DC56-B180-F2B8-DBFC-5A8A31EBBEC9 [192.168.65.1:52915] disconnected: connection closed by client.
+1774143152: Client auto-8A17EE25-0F33-A392-2E08-FD8B970072EA [192.168.65.1:20429] disconnected: connection closed by client.
+1774143152: Client auto-884C295A-2677-270B-3E11-2BD989C8C268 [192.168.65.1:38086] disconnected: connection closed by client.
+1774143152: Client auto-74ED6C12-B2CE-D3A3-4EA5-8BEE583A997F [192.168.65.1:40165] disconnected: connection closed by client.
+1774143152: Client auto-ACD70E76-223E-C700-92EA-C3CA720261EA [192.168.65.1:57165] disconnected: connection closed by client.
+1774143152: Client auto-BB409475-852C-AED1-3BC9-432511AC7F55 [192.168.65.1:16100] disconnected: connection closed by client.
+1774143152: Client auto-69AF4664-82CF-B9E9-ADB8-726F4ED2DE9D [192.168.65.1:31791] disconnected: connection closed by client.
+1774143152: Client auto-13C67E57-9429-7278-21FE-6F3B31EFF7EE [192.168.65.1:18189] disconnected: connection closed by client.
+1774143152: Client auto-F2A28F1B-ABFC-C717-77B2-D30C45831F42 [192.168.65.1:47961] disconnected: connection closed by client.
+1774143152: Client auto-32244BEF-6DF7-DC3C-7BE0-471C5DDE1416 [192.168.65.1:38191] disconnected: connection closed by client.
+1774143262: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774143890: New connection from 192.168.65.1:50060 on port 1883.
+1774143890: New client connected from 192.168.65.1:50060 as auto-31C048B2-8518-BF31-9006-631CF4E25230 (p4, c1, k60).
+1774143891: New connection from 192.168.65.1:58032 on port 1883.
+1774143891: New client connected from 192.168.65.1:58032 as auto-2E149A6F-B17B-5B0C-3512-7309F34C1C41 (p4, c1, k60).
+1774143891: New connection from 192.168.65.1:53042 on port 1883.
+1774143891: New connection from 192.168.65.1:16367 on port 1883.
+1774143891: New connection from 192.168.65.1:25238 on port 1883.
+1774143891: New connection from 192.168.65.1:63989 on port 1883.
+1774143891: New connection from 192.168.65.1:40229 on port 1883.
+1774143891: New connection from 192.168.65.1:41901 on port 1883.
+1774143891: New connection from 192.168.65.1:50475 on port 1883.
+1774143891: New client connected from 192.168.65.1:53042 as auto-A531E9DC-DBB0-39E4-C20F-755C4EDFFB56 (p4, c1, k60).
+1774143891: New client connected from 192.168.65.1:16367 as auto-9173BB94-D0A5-959C-BA3F-292CAE9F7CA1 (p4, c1, k60).
+1774143891: New client connected from 192.168.65.1:25238 as auto-2606AD95-F56B-B597-E571-608623E2A250 (p4, c1, k60).
+1774143891: New client connected from 192.168.65.1:63989 as auto-9A095FAE-C67F-BE6F-3D7F-030F23E39EDE (p4, c1, k60).
+1774143891: New client connected from 192.168.65.1:40229 as auto-72DC8D2D-779A-0BC1-4F12-50D5B3D448D2 (p4, c1, k60).
+1774143891: New client connected from 192.168.65.1:50475 as auto-737E9D15-371D-23E4-EE53-45CD8265AA77 (p4, c1, k60).
+1774143891: New client connected from 192.168.65.1:41901 as auto-D15C0089-B111-6106-B1D5-AB8476A0F88A (p4, c1, k60).
+1774143891: New connection from 192.168.65.1:28914 on port 1883.
+1774143891: New connection from 192.168.65.1:18662 on port 1883.
+1774143891: New connection from 192.168.65.1:49616 on port 1883.
+1774143891: New client connected from 192.168.65.1:28914 as auto-AAF383CB-C77B-6B0C-1787-CD85A525C722 (p4, c1, k60).
+1774143891: New client connected from 192.168.65.1:18662 as auto-CF908691-AA03-E5C3-2061-F0429DEE18A8 (p4, c1, k60).
+1774143891: New client connected from 192.168.65.1:49616 as auto-1FBDD22F-84F7-8C47-BF36-BB8B2A7C0F1E (p4, c1, k60).
+1774143892: New connection from 192.168.65.1:30807 on port 1883.
+1774143892: New client connected from 192.168.65.1:30807 as auto-B694B8AE-EC24-D0C0-F39B-550D94480AE7 (p4, c1, k60).
+1774144370: Client auto-31C048B2-8518-BF31-9006-631CF4E25230 [192.168.65.1:50060] disconnected: connection closed by client.
+1774144370: Client auto-72DC8D2D-779A-0BC1-4F12-50D5B3D448D2 [192.168.65.1:40229] disconnected: connection closed by client.
+1774144370: Client auto-D15C0089-B111-6106-B1D5-AB8476A0F88A [192.168.65.1:41901] disconnected: connection closed by client.
+1774144370: Client auto-2E149A6F-B17B-5B0C-3512-7309F34C1C41 [192.168.65.1:58032] disconnected: connection closed by client.
+1774144370: Client auto-A531E9DC-DBB0-39E4-C20F-755C4EDFFB56 [192.168.65.1:53042] disconnected: connection closed by client.
+1774144370: Client auto-CF908691-AA03-E5C3-2061-F0429DEE18A8 [192.168.65.1:18662] disconnected: connection closed by client.
+1774144370: Client auto-2606AD95-F56B-B597-E571-608623E2A250 [192.168.65.1:25238] disconnected: connection closed by client.
+1774144370: Client auto-737E9D15-371D-23E4-EE53-45CD8265AA77 [192.168.65.1:50475] disconnected: connection closed by client.
+1774144370: Client auto-9173BB94-D0A5-959C-BA3F-292CAE9F7CA1 [192.168.65.1:16367] disconnected: connection closed by client.
+1774144370: Client auto-1FBDD22F-84F7-8C47-BF36-BB8B2A7C0F1E [192.168.65.1:49616] disconnected: connection closed by client.
+1774144370: Client auto-B694B8AE-EC24-D0C0-F39B-550D94480AE7 [192.168.65.1:30807] disconnected: connection closed by client.
+1774144370: Client auto-AAF383CB-C77B-6B0C-1787-CD85A525C722 [192.168.65.1:28914] disconnected: connection closed by client.
+1774144370: Client auto-9A095FAE-C67F-BE6F-3D7F-030F23E39EDE [192.168.65.1:63989] disconnected: connection closed by client.
+1774145063: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774145276: New connection from 192.168.65.1:59790 on port 1883.
+1774145276: New client connected from 192.168.65.1:59790 as auto-941D4947-A7C5-7FBD-A4FB-BD472423A6EF (p4, c1, k60).
+1774145277: New connection from 192.168.65.1:29692 on port 1883.
+1774145277: New client connected from 192.168.65.1:29692 as auto-BFCF36D1-1EF4-6CCE-E875-ED20BB06F4A3 (p4, c1, k60).
+1774145277: New connection from 192.168.65.1:43168 on port 1883.
+1774145277: New connection from 192.168.65.1:45179 on port 1883.
+1774145277: New connection from 192.168.65.1:44254 on port 1883.
+1774145277: New connection from 192.168.65.1:63409 on port 1883.
+1774145277: New connection from 192.168.65.1:59079 on port 1883.
+1774145277: New connection from 192.168.65.1:55036 on port 1883.
+1774145277: New connection from 192.168.65.1:28396 on port 1883.
+1774145277: New connection from 192.168.65.1:64347 on port 1883.
+1774145277: New connection from 192.168.65.1:35020 on port 1883.
+1774145277: New connection from 192.168.65.1:57223 on port 1883.
+1774145277: New client connected from 192.168.65.1:43168 as auto-5E686994-4FB3-162C-9925-6843F1274119 (p4, c1, k60).
+1774145277: New client connected from 192.168.65.1:45179 as auto-07E16F69-7D86-94A7-F929-E3A7CA8C7980 (p4, c1, k60).
+1774145277: New client connected from 192.168.65.1:44254 as auto-E32E93A5-257A-B08B-0650-1015AD36EB3A (p4, c1, k60).
+1774145277: New client connected from 192.168.65.1:63409 as auto-7EBF46CC-FD13-36C1-7455-BBE029157D59 (p4, c1, k60).
+1774145277: New client connected from 192.168.65.1:59079 as auto-9F4ECA29-13BB-F023-F54E-C57542BF1BFD (p4, c1, k60).
+1774145277: New client connected from 192.168.65.1:55036 as auto-319FA2C0-64C4-0D98-A025-829E20686B44 (p4, c1, k60).
+1774145277: New client connected from 192.168.65.1:28396 as auto-C8D4D2F2-4B52-3B9F-A690-B2F149CAC625 (p4, c1, k60).
+1774145277: New client connected from 192.168.65.1:64347 as auto-54991F45-ADD9-4FA9-A937-58F932978517 (p4, c1, k60).
+1774145277: New client connected from 192.168.65.1:35020 as auto-C9228A35-C6D9-E217-D3ED-7739B99FB528 (p4, c1, k60).
+1774145277: New client connected from 192.168.65.1:57223 as auto-00C458D1-AA40-53E7-52EB-8B42C414C4B4 (p4, c1, k60).
+1774145278: New connection from 192.168.65.1:61379 on port 1883.
+1774145278: New client connected from 192.168.65.1:61379 as auto-EA5B32B1-AE13-E1A2-1BF7-025C7544CB37 (p4, c1, k60).
+1774145756: Client auto-941D4947-A7C5-7FBD-A4FB-BD472423A6EF [192.168.65.1:59790] disconnected: connection closed by client.
+1774145756: Client auto-54991F45-ADD9-4FA9-A937-58F932978517 [192.168.65.1:64347] disconnected: connection closed by client.
+1774145756: Client auto-319FA2C0-64C4-0D98-A025-829E20686B44 [192.168.65.1:55036] disconnected: connection closed by client.
+1774145756: Client auto-5E686994-4FB3-162C-9925-6843F1274119 [192.168.65.1:43168] disconnected: connection closed by client.
+1774145756: Client auto-7EBF46CC-FD13-36C1-7455-BBE029157D59 [192.168.65.1:63409] disconnected: connection closed by client.
+1774145756: Client auto-E32E93A5-257A-B08B-0650-1015AD36EB3A [192.168.65.1:44254] disconnected: connection closed by client.
+1774145756: Client auto-9F4ECA29-13BB-F023-F54E-C57542BF1BFD [192.168.65.1:59079] disconnected: connection closed by client.
+1774145756: Client auto-C9228A35-C6D9-E217-D3ED-7739B99FB528 [192.168.65.1:35020] disconnected: connection closed by client.
+1774145756: Client auto-00C458D1-AA40-53E7-52EB-8B42C414C4B4 [192.168.65.1:57223] disconnected: connection closed by client.
+1774145756: Client auto-EA5B32B1-AE13-E1A2-1BF7-025C7544CB37 [192.168.65.1:61379] disconnected: connection closed by client.
+1774145756: Client auto-BFCF36D1-1EF4-6CCE-E875-ED20BB06F4A3 [192.168.65.1:29692] disconnected: connection closed by client.
+1774145756: Client auto-C8D4D2F2-4B52-3B9F-A690-B2F149CAC625 [192.168.65.1:28396] disconnected: connection closed by client.
+1774145756: Client auto-07E16F69-7D86-94A7-F929-E3A7CA8C7980 [192.168.65.1:45179] disconnected: connection closed by client.
+1774146828: New connection from 192.168.65.1:30150 on port 1883.
+1774146828: New client connected from 192.168.65.1:30150 as auto-87608B30-0D16-0E50-8690-CFAAC9107A92 (p4, c1, k60).
+1774146829: New connection from 192.168.65.1:31370 on port 1883.
+1774146829: New client connected from 192.168.65.1:31370 as auto-5D9F8C11-3DF9-5CC9-CDC8-380EC09A3CEE (p4, c1, k60).
+1774146829: New connection from 192.168.65.1:21552 on port 1883.
+1774146829: New connection from 192.168.65.1:53956 on port 1883.
+1774146829: New connection from 192.168.65.1:52808 on port 1883.
+1774146829: New connection from 192.168.65.1:62631 on port 1883.
+1774146829: New connection from 192.168.65.1:18889 on port 1883.
+1774146829: New connection from 192.168.65.1:59747 on port 1883.
+1774146829: New connection from 192.168.65.1:49973 on port 1883.
+1774146829: New connection from 192.168.65.1:57973 on port 1883.
+1774146829: New connection from 192.168.65.1:41790 on port 1883.
+1774146829: New connection from 192.168.65.1:34820 on port 1883.
+1774146829: New client connected from 192.168.65.1:21552 as auto-8BB04939-B45D-7F31-4304-648DFC7D5957 (p4, c1, k60).
+1774146829: New client connected from 192.168.65.1:53956 as auto-9BD3B439-16CC-B4A4-EC15-2412F041B88A (p4, c1, k60).
+1774146829: New client connected from 192.168.65.1:52808 as auto-104F951B-C78B-8804-D570-3CDC0F766A6C (p4, c1, k60).
+1774146829: New client connected from 192.168.65.1:62631 as auto-A5ECB1A8-38BB-3239-F498-B195C7E43845 (p4, c1, k60).
+1774146829: New client connected from 192.168.65.1:18889 as auto-C045DA12-D9D9-454A-0463-449CEF6D33C0 (p4, c1, k60).
+1774146829: New client connected from 192.168.65.1:59747 as auto-507C796F-3A3F-831B-560E-A2EF36D23DFE (p4, c1, k60).
+1774146829: New client connected from 192.168.65.1:49973 as auto-C46EFBC1-57DD-3357-6BEB-3738DF5738EC (p4, c1, k60).
+1774146829: New client connected from 192.168.65.1:57973 as auto-3FF577E9-B522-32D1-E3F2-B3EDCA28F83F (p4, c1, k60).
+1774146829: New client connected from 192.168.65.1:41790 as auto-D6FF5769-B137-941F-EB05-912DAAA44586 (p4, c1, k60).
+1774146829: New client connected from 192.168.65.1:34820 as auto-45223AB2-2496-7F34-881E-34FADEB11FA0 (p4, c1, k60).
+1774146830: New connection from 192.168.65.1:54670 on port 1883.
+1774146830: New client connected from 192.168.65.1:54670 as auto-87E65299-899F-AF87-A858-50C3DBEF4E15 (p4, c1, k60).
+1774146864: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774147248: Client auto-87E65299-899F-AF87-A858-50C3DBEF4E15 [192.168.65.1:54670] disconnected.
+1774147248: Client auto-507C796F-3A3F-831B-560E-A2EF36D23DFE [192.168.65.1:59747] disconnected: connection closed by client.
+1774147248: Client auto-87608B30-0D16-0E50-8690-CFAAC9107A92 [192.168.65.1:30150] disconnected: connection closed by client.
+1774147248: Client auto-5D9F8C11-3DF9-5CC9-CDC8-380EC09A3CEE [192.168.65.1:31370] disconnected: connection closed by client.
+1774147248: Client auto-45223AB2-2496-7F34-881E-34FADEB11FA0 [192.168.65.1:34820] disconnected: connection closed by client.
+1774147248: Client auto-C46EFBC1-57DD-3357-6BEB-3738DF5738EC [192.168.65.1:49973] disconnected: connection closed by client.
+1774147248: Client auto-A5ECB1A8-38BB-3239-F498-B195C7E43845 [192.168.65.1:62631] disconnected: connection closed by client.
+1774147248: Client auto-3FF577E9-B522-32D1-E3F2-B3EDCA28F83F [192.168.65.1:57973] disconnected: connection closed by client.
+1774147248: Client auto-9BD3B439-16CC-B4A4-EC15-2412F041B88A [192.168.65.1:53956] disconnected: connection closed by client.
+1774147248: Client auto-C045DA12-D9D9-454A-0463-449CEF6D33C0 [192.168.65.1:18889] disconnected: connection closed by client.
+1774147248: Client auto-104F951B-C78B-8804-D570-3CDC0F766A6C [192.168.65.1:52808] disconnected: connection closed by client.
+1774147248: Client auto-8BB04939-B45D-7F31-4304-648DFC7D5957 [192.168.65.1:21552] disconnected: connection closed by client.
+1774147248: Client auto-D6FF5769-B137-941F-EB05-912DAAA44586 [192.168.65.1:41790] disconnected: connection closed by client.
+1774147270: New connection from 192.168.65.1:64681 on port 1883.
+1774147270: New client connected from 192.168.65.1:64681 as auto-EBCE9CB4-A283-D42E-F71E-BC32F4F39FF0 (p4, c1, k60).
+1774147271: New connection from 192.168.65.1:63974 on port 1883.
+1774147271: New client connected from 192.168.65.1:63974 as auto-B9A67673-B0AE-F6F9-EA69-182FFCC2B7B9 (p4, c1, k60).
+1774147271: New connection from 192.168.65.1:56165 on port 1883.
+1774147271: New connection from 192.168.65.1:61714 on port 1883.
+1774147271: New connection from 192.168.65.1:46341 on port 1883.
+1774147271: New connection from 192.168.65.1:30721 on port 1883.
+1774147271: New connection from 192.168.65.1:62590 on port 1883.
+1774147271: New connection from 192.168.65.1:62235 on port 1883.
+1774147271: New connection from 192.168.65.1:20967 on port 1883.
+1774147271: New connection from 192.168.65.1:23190 on port 1883.
+1774147271: New connection from 192.168.65.1:50377 on port 1883.
+1774147271: New connection from 192.168.65.1:25408 on port 1883.
+1774147271: New client connected from 192.168.65.1:56165 as auto-0C3AA151-92BB-B467-6493-0C48B86A6746 (p4, c1, k60).
+1774147271: New client connected from 192.168.65.1:61714 as auto-0095AEE4-DF72-A812-83AC-AB04BEA2B89C (p4, c1, k60).
+1774147271: New client connected from 192.168.65.1:46341 as auto-464F272A-A50C-18E7-3227-44DEB1D9D9F9 (p4, c1, k60).
+1774147271: New client connected from 192.168.65.1:30721 as auto-0CDE3CA7-2864-1723-2DA4-79787635A113 (p4, c1, k60).
+1774147271: New client connected from 192.168.65.1:62590 as auto-C05B657C-A22C-3B67-D3AE-A5F0B8B0BC45 (p4, c1, k60).
+1774147271: New client connected from 192.168.65.1:62235 as auto-3AE75932-618D-23D2-9C1A-C28E309C2AA4 (p4, c1, k60).
+1774147271: New client connected from 192.168.65.1:20967 as auto-651F1EAB-510B-1EC3-8C27-696E3F8209C7 (p4, c1, k60).
+1774147271: New client connected from 192.168.65.1:23190 as auto-C5373D9F-F786-00AF-4A5F-56A11C93A752 (p4, c1, k60).
+1774147271: New client connected from 192.168.65.1:50377 as auto-68202281-8758-9C8A-613D-C59B7D183CDC (p4, c1, k60).
+1774147271: New client connected from 192.168.65.1:25408 as auto-738878A1-A6E5-F1B3-D170-D7319B832EE8 (p4, c1, k60).
+1774147272: New connection from 192.168.65.1:40174 on port 1883.
+1774147272: New client connected from 192.168.65.1:40174 as auto-81F95027-7747-8E99-6240-1911ADF40B1E (p4, c1, k60).
+1774147750: Client auto-EBCE9CB4-A283-D42E-F71E-BC32F4F39FF0 [192.168.65.1:64681] disconnected: connection closed by client.
+1774147750: Client auto-B9A67673-B0AE-F6F9-EA69-182FFCC2B7B9 [192.168.65.1:63974] disconnected: connection closed by client.
+1774147750: Client auto-738878A1-A6E5-F1B3-D170-D7319B832EE8 [192.168.65.1:25408] disconnected: connection closed by client.
+1774147750: Client auto-0095AEE4-DF72-A812-83AC-AB04BEA2B89C [192.168.65.1:61714] disconnected: connection closed by client.
+1774147750: Client auto-651F1EAB-510B-1EC3-8C27-696E3F8209C7 [192.168.65.1:20967] disconnected: connection closed by client.
+1774147750: Client auto-0C3AA151-92BB-B467-6493-0C48B86A6746 [192.168.65.1:56165] disconnected: connection closed by client.
+1774147750: Client auto-3AE75932-618D-23D2-9C1A-C28E309C2AA4 [192.168.65.1:62235] disconnected: connection closed by client.
+1774147750: Client auto-464F272A-A50C-18E7-3227-44DEB1D9D9F9 [192.168.65.1:46341] disconnected: connection closed by client.
+1774147750: Client auto-C5373D9F-F786-00AF-4A5F-56A11C93A752 [192.168.65.1:23190] disconnected: connection closed by client.
+1774147750: Client auto-68202281-8758-9C8A-613D-C59B7D183CDC [192.168.65.1:50377] disconnected: connection closed by client.
+1774147750: Client auto-0CDE3CA7-2864-1723-2DA4-79787635A113 [192.168.65.1:30721] disconnected: connection closed by client.
+1774147750: Client auto-81F95027-7747-8E99-6240-1911ADF40B1E [192.168.65.1:40174] disconnected: connection closed by client.
+1774147750: Client auto-C05B657C-A22C-3B67-D3AE-A5F0B8B0BC45 [192.168.65.1:62590] disconnected: connection closed by client.
+1774154349: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774163407: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774173589: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774175390: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774182091: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774187802: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774202625: New connection from 192.168.65.1:21854 on port 1883.
+1774202625: New client connected from 192.168.65.1:21854 as auto-C9DBD49E-2720-7F1E-2C0E-AF889F5517DF (p4, c1, k60).
+1774202625: New connection from 192.168.65.1:56530 on port 1883.
+1774202625: New client connected from 192.168.65.1:56530 as auto-FA746198-8491-0C94-6C4C-1EC91C2D612E (p4, c1, k60).
+1774202626: New connection from 192.168.65.1:38954 on port 1883.
+1774202626: New connection from 192.168.65.1:43369 on port 1883.
+1774202626: New connection from 192.168.65.1:51237 on port 1883.
+1774202626: New connection from 192.168.65.1:50442 on port 1883.
+1774202626: New connection from 192.168.65.1:60659 on port 1883.
+1774202626: New connection from 192.168.65.1:41124 on port 1883.
+1774202626: New connection from 192.168.65.1:24269 on port 1883.
+1774202626: New connection from 192.168.65.1:58335 on port 1883.
+1774202626: New connection from 192.168.65.1:32477 on port 1883.
+1774202626: New connection from 192.168.65.1:63637 on port 1883.
+1774202626: New client connected from 192.168.65.1:38954 as auto-5400CF8D-042E-271D-7F7E-DD14C0AE97E1 (p4, c1, k60).
+1774202626: New client connected from 192.168.65.1:43369 as auto-1841D696-0756-9B07-C717-9C923FFF55A2 (p4, c1, k60).
+1774202626: New client connected from 192.168.65.1:51237 as auto-3C16C1A4-4239-A3DA-61E8-49B14E491ABB (p4, c1, k60).
+1774202626: New client connected from 192.168.65.1:50442 as auto-C291B724-E92E-8F1F-F346-75621E97794C (p4, c1, k60).
+1774202626: New client connected from 192.168.65.1:60659 as auto-6214B813-B26B-80AE-B8F0-BB79F3EE898B (p4, c1, k60).
+1774202626: New client connected from 192.168.65.1:41124 as auto-CECB0C8D-5ADC-83AD-7BDD-F44FF27A891B (p4, c1, k60).
+1774202626: New client connected from 192.168.65.1:24269 as auto-1264744D-D8E3-22B4-E75D-27940FAB6506 (p4, c1, k60).
+1774202626: New client connected from 192.168.65.1:58335 as auto-D5A3B20F-70D9-0E13-CD86-073923CEEE06 (p4, c1, k60).
+1774202626: New client connected from 192.168.65.1:32477 as auto-179FCDFF-AD59-8ABD-A1A6-7DC552D069ED (p4, c1, k60).
+1774202626: New client connected from 192.168.65.1:63637 as auto-56267965-8329-20C5-31F0-A75C77CADC1C (p4, c1, k60).
+1774202627: New connection from 192.168.65.1:19556 on port 1883.
+1774202627: New client connected from 192.168.65.1:19556 as auto-CCBF191C-6D40-8D01-1BCD-1FE801B4F62F (p4, c1, k60).
+1774203105: Client auto-1264744D-D8E3-22B4-E75D-27940FAB6506 [192.168.65.1:24269] disconnected: connection closed by client.
+1774203105: Client auto-FA746198-8491-0C94-6C4C-1EC91C2D612E [192.168.65.1:56530] disconnected: connection closed by client.
+1774203105: Client auto-CCBF191C-6D40-8D01-1BCD-1FE801B4F62F [192.168.65.1:19556] disconnected: connection closed by client.
+1774203105: Client auto-C291B724-E92E-8F1F-F346-75621E97794C [192.168.65.1:50442] disconnected: connection closed by client.
+1774203105: Client auto-6214B813-B26B-80AE-B8F0-BB79F3EE898B [192.168.65.1:60659] disconnected: connection closed by client.
+1774203105: Client auto-5400CF8D-042E-271D-7F7E-DD14C0AE97E1 [192.168.65.1:38954] disconnected: connection closed by client.
+1774203105: Client auto-1841D696-0756-9B07-C717-9C923FFF55A2 [192.168.65.1:43369] disconnected: connection closed by client.
+1774203105: Client auto-56267965-8329-20C5-31F0-A75C77CADC1C [192.168.65.1:63637] disconnected: connection closed by client.
+1774203105: Client auto-179FCDFF-AD59-8ABD-A1A6-7DC552D069ED [192.168.65.1:32477] disconnected: connection closed by client.
+1774203105: Client auto-3C16C1A4-4239-A3DA-61E8-49B14E491ABB [192.168.65.1:51237] disconnected: connection closed by client.
+1774203105: Client auto-D5A3B20F-70D9-0E13-CD86-073923CEEE06 [192.168.65.1:58335] disconnected: connection closed by client.
+1774203105: Client auto-CECB0C8D-5ADC-83AD-7BDD-F44FF27A891B [192.168.65.1:41124] disconnected: connection closed by client.
+1774203105: Client auto-C9DBD49E-2720-7F1E-2C0E-AF889F5517DF [192.168.65.1:21854] disconnected: connection closed by client.
+1774209805: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774209928: New connection from 192.168.65.1:25721 on port 1883.
+1774209928: New client connected from 192.168.65.1:25721 as auto-B6AB8E23-6771-A0CC-D866-C64D7B985495 (p4, c1, k60).
+1774209928: New connection from 192.168.65.1:20961 on port 1883.
+1774209928: New client connected from 192.168.65.1:20961 as auto-C5402261-08BD-086D-C8F4-8AAAF7C3A736 (p4, c1, k60).
+1774209929: New connection from 192.168.65.1:57037 on port 1883.
+1774209929: New connection from 192.168.65.1:41528 on port 1883.
+1774209929: New connection from 192.168.65.1:51669 on port 1883.
+1774209929: New connection from 192.168.65.1:46441 on port 1883.
+1774209929: New connection from 192.168.65.1:18181 on port 1883.
+1774209929: New connection from 192.168.65.1:52269 on port 1883.
+1774209929: New connection from 192.168.65.1:21651 on port 1883.
+1774209929: New connection from 192.168.65.1:51123 on port 1883.
+1774209929: New connection from 192.168.65.1:61444 on port 1883.
+1774209929: New connection from 192.168.65.1:61393 on port 1883.
+1774209929: New client connected from 192.168.65.1:57037 as auto-743D3D05-1298-0846-EC2E-C8B29C20E6E0 (p4, c1, k60).
+1774209929: New client connected from 192.168.65.1:41528 as auto-05ED669F-12A7-6CF5-F608-C330A24B58CC (p4, c1, k60).
+1774209929: New client connected from 192.168.65.1:51669 as auto-F9BAF494-7A0B-9AEB-7566-83DD24D46701 (p4, c1, k60).
+1774209929: New client connected from 192.168.65.1:46441 as auto-62CA1975-A9F1-3ADA-5F31-F7EFCAA58515 (p4, c1, k60).
+1774209929: New client connected from 192.168.65.1:18181 as auto-1D67C532-C908-57D7-BB29-9AF612C5789E (p4, c1, k60).
+1774209929: New client connected from 192.168.65.1:52269 as auto-E569B6AE-F382-A34F-0C94-5725BBC7ED82 (p4, c1, k60).
+1774209929: New client connected from 192.168.65.1:21651 as auto-2CB98C02-87C0-DDD2-9A05-1DA2B5FFBC43 (p4, c1, k60).
+1774209929: New client connected from 192.168.65.1:51123 as auto-F3D8C6B2-C16F-28A9-4D9B-5B4A584AE09E (p4, c1, k60).
+1774209929: New client connected from 192.168.65.1:61444 as auto-B8228C9A-2D01-56FE-7BAC-97E8646CBBD5 (p4, c1, k60).
+1774209929: New client connected from 192.168.65.1:61393 as auto-E28E473E-C948-B955-6638-FD1BD905B3E5 (p4, c1, k60).
+1774209930: New connection from 192.168.65.1:53832 on port 1883.
+1774209930: New client connected from 192.168.65.1:53832 as auto-FC42DD96-0FAD-537D-E412-67E191AE692B (p4, c1, k60).
+1774210408: Client auto-05ED669F-12A7-6CF5-F608-C330A24B58CC [192.168.65.1:41528] disconnected: connection closed by client.
+1774210408: Client auto-F3D8C6B2-C16F-28A9-4D9B-5B4A584AE09E [192.168.65.1:51123] disconnected: connection closed by client.
+1774210408: Client auto-B8228C9A-2D01-56FE-7BAC-97E8646CBBD5 [192.168.65.1:61444] disconnected: connection closed by client.
+1774210408: Client auto-2CB98C02-87C0-DDD2-9A05-1DA2B5FFBC43 [192.168.65.1:21651] disconnected: connection closed by client.
+1774210408: Client auto-1D67C532-C908-57D7-BB29-9AF612C5789E [192.168.65.1:18181] disconnected: connection closed by client.
+1774210408: Client auto-B6AB8E23-6771-A0CC-D866-C64D7B985495 [192.168.65.1:25721] disconnected: connection closed by client.
+1774210408: Client auto-C5402261-08BD-086D-C8F4-8AAAF7C3A736 [192.168.65.1:20961] disconnected: connection closed by client.
+1774210408: Client auto-743D3D05-1298-0846-EC2E-C8B29C20E6E0 [192.168.65.1:57037] disconnected: connection closed by client.
+1774210408: Client auto-F9BAF494-7A0B-9AEB-7566-83DD24D46701 [192.168.65.1:51669] disconnected: connection closed by client.
+1774210408: Client auto-E28E473E-C948-B955-6638-FD1BD905B3E5 [192.168.65.1:61393] disconnected: connection closed by client.
+1774210408: Client auto-62CA1975-A9F1-3ADA-5F31-F7EFCAA58515 [192.168.65.1:46441] disconnected: connection closed by client.
+1774210408: Client auto-E569B6AE-F382-A34F-0C94-5725BBC7ED82 [192.168.65.1:52269] disconnected: connection closed by client.
+1774210408: Client auto-FC42DD96-0FAD-537D-E412-67E191AE692B [192.168.65.1:53832] disconnected: connection closed by client.
+1774225167: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774226968: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774228769: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774230231: New connection from 192.168.65.1:36129 on port 1883.
+1774230231: New client connected from 192.168.65.1:36129 as auto-5004D01E-9336-A159-FD41-68A5D2883211 (p4, c1, k60).
+1774230232: New connection from 192.168.65.1:46400 on port 1883.
+1774230232: New client connected from 192.168.65.1:46400 as auto-B2DDFFAB-5A49-81DE-EC65-E0D83ADEB4F9 (p4, c1, k60).
+1774230232: New connection from 192.168.65.1:53479 on port 1883.
+1774230232: New connection from 192.168.65.1:37527 on port 1883.
+1774230232: New connection from 192.168.65.1:49078 on port 1883.
+1774230232: New connection from 192.168.65.1:20539 on port 1883.
+1774230232: New connection from 192.168.65.1:64324 on port 1883.
+1774230232: New connection from 192.168.65.1:24896 on port 1883.
+1774230232: New connection from 192.168.65.1:31809 on port 1883.
+1774230232: New connection from 192.168.65.1:26317 on port 1883.
+1774230232: New connection from 192.168.65.1:16323 on port 1883.
+1774230232: New connection from 192.168.65.1:44583 on port 1883.
+1774230232: New client connected from 192.168.65.1:53479 as auto-831DF63A-2C0D-7391-6E2F-B9A413F40336 (p4, c1, k60).
+1774230232: New client connected from 192.168.65.1:37527 as auto-EB1202C4-4F8B-F208-2D9C-BFEE3700422A (p4, c1, k60).
+1774230232: New client connected from 192.168.65.1:49078 as auto-8CAD3168-5391-F4AE-F383-51482428668D (p4, c1, k60).
+1774230232: New client connected from 192.168.65.1:20539 as auto-922C3C75-0197-8F86-4AF1-432643DDCB86 (p4, c1, k60).
+1774230232: New client connected from 192.168.65.1:64324 as auto-CBB73058-3E9F-0401-0ED3-0EE0BCD6C96C (p4, c1, k60).
+1774230232: New client connected from 192.168.65.1:24896 as auto-5B450B42-EDDB-B70B-2D9E-CC45AB91688B (p4, c1, k60).
+1774230232: New client connected from 192.168.65.1:31809 as auto-8E02C921-72B0-5AF1-E2E5-AB0026B7B9DB (p4, c1, k60).
+1774230232: New client connected from 192.168.65.1:26317 as auto-E8F89655-2F51-E3AA-6496-CC82EEEE3DE0 (p4, c1, k60).
+1774230232: New client connected from 192.168.65.1:16323 as auto-2F5DBB76-C60C-D1E4-BAB2-4770C5D79F44 (p4, c1, k60).
+1774230232: New client connected from 192.168.65.1:44583 as auto-0DC0004E-3CD2-0E8F-F80A-136ED078E2C2 (p4, c1, k60).
+1774230233: New connection from 192.168.65.1:54304 on port 1883.
+1774230233: New client connected from 192.168.65.1:54304 as auto-8E6D9693-AE84-954D-C8F6-D59715A989C1 (p4, c1, k60).
+1774230570: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774230711: Client auto-5004D01E-9336-A159-FD41-68A5D2883211 [192.168.65.1:36129] disconnected: connection closed by client.
+1774230711: Client auto-B2DDFFAB-5A49-81DE-EC65-E0D83ADEB4F9 [192.168.65.1:46400] disconnected: connection closed by client.
+1774230711: Client auto-CBB73058-3E9F-0401-0ED3-0EE0BCD6C96C [192.168.65.1:64324] disconnected: connection closed by client.
+1774230711: Client auto-5B450B42-EDDB-B70B-2D9E-CC45AB91688B [192.168.65.1:24896] disconnected: connection closed by client.
+1774230711: Client auto-922C3C75-0197-8F86-4AF1-432643DDCB86 [192.168.65.1:20539] disconnected: connection closed by client.
+1774230711: Client auto-E8F89655-2F51-E3AA-6496-CC82EEEE3DE0 [192.168.65.1:26317] disconnected: connection closed by client.
+1774230711: Client auto-0DC0004E-3CD2-0E8F-F80A-136ED078E2C2 [192.168.65.1:44583] disconnected: connection closed by client.
+1774230711: Client auto-8E02C921-72B0-5AF1-E2E5-AB0026B7B9DB [192.168.65.1:31809] disconnected: connection closed by client.
+1774230711: Client auto-831DF63A-2C0D-7391-6E2F-B9A413F40336 [192.168.65.1:53479] disconnected: connection closed by client.
+1774230711: Client auto-2F5DBB76-C60C-D1E4-BAB2-4770C5D79F44 [192.168.65.1:16323] disconnected: connection closed by client.
+1774230711: Client auto-EB1202C4-4F8B-F208-2D9C-BFEE3700422A [192.168.65.1:37527] disconnected: connection closed by client.
+1774230711: Client auto-8CAD3168-5391-F4AE-F383-51482428668D [192.168.65.1:49078] disconnected: connection closed by client.
+1774230711: Client auto-8E6D9693-AE84-954D-C8F6-D59715A989C1 [192.168.65.1:54304] disconnected: connection closed by client.
+1774230852: New connection from 192.168.65.1:65473 on port 1883.
+1774230852: New client connected from 192.168.65.1:65473 as auto-2AE41C65-A083-00C1-6468-6B59604FDA99 (p4, c1, k60).
+1774230852: New connection from 192.168.65.1:46017 on port 1883.
+1774230852: New client connected from 192.168.65.1:46017 as auto-D28A41C4-D5B5-7F11-9721-48B7C9BDFC45 (p4, c1, k60).
+1774230853: New connection from 192.168.65.1:29527 on port 1883.
+1774230853: New connection from 192.168.65.1:61186 on port 1883.
+1774230853: New connection from 192.168.65.1:33282 on port 1883.
+1774230853: New connection from 192.168.65.1:52209 on port 1883.
+1774230853: New connection from 192.168.65.1:64181 on port 1883.
+1774230853: New connection from 192.168.65.1:26372 on port 1883.
+1774230853: New connection from 192.168.65.1:33008 on port 1883.
+1774230853: New connection from 192.168.65.1:29962 on port 1883.
+1774230853: New connection from 192.168.65.1:42999 on port 1883.
+1774230853: New connection from 192.168.65.1:32920 on port 1883.
+1774230853: New client connected from 192.168.65.1:29527 as auto-D5C598B9-FACC-4512-7106-22302195D863 (p4, c1, k60).
+1774230853: New client connected from 192.168.65.1:61186 as auto-C7CA7E86-959B-1671-5877-8E87E2AD2277 (p4, c1, k60).
+1774230853: New client connected from 192.168.65.1:33282 as auto-6456D140-D8DE-D92A-7FEA-5A5972C1CED7 (p4, c1, k60).
+1774230853: New client connected from 192.168.65.1:52209 as auto-4E650123-295C-DD54-A58D-44D341940799 (p4, c1, k60).
+1774230853: New client connected from 192.168.65.1:64181 as auto-CACFA63C-324E-40D2-FAF9-20806C9B7CE9 (p4, c1, k60).
+1774230853: New client connected from 192.168.65.1:26372 as auto-3358F95B-5872-D6C9-03A8-DD440F31E02B (p4, c1, k60).
+1774230853: New client connected from 192.168.65.1:33008 as auto-499B09B6-24CF-2898-3F06-2E670C768397 (p4, c1, k60).
+1774230853: New client connected from 192.168.65.1:29962 as auto-D98F7FEA-2A86-BEBA-8ECF-55A2F2F63E5C (p4, c1, k60).
+1774230853: New client connected from 192.168.65.1:42999 as auto-9339E24B-B35C-7AE9-FA76-216E10099A8C (p4, c1, k60).
+1774230853: New client connected from 192.168.65.1:32920 as auto-2F115F36-B7A1-D341-0F05-906EE5B0E41C (p4, c1, k60).
+1774230854: New connection from 192.168.65.1:50076 on port 1883.
+1774230854: New client connected from 192.168.65.1:50076 as auto-C060B725-6BAF-158F-C6AA-50EC11713632 (p4, c1, k60).
+1774231332: Client auto-C7CA7E86-959B-1671-5877-8E87E2AD2277 [192.168.65.1:61186] disconnected: connection closed by client.
+1774231332: Client auto-D98F7FEA-2A86-BEBA-8ECF-55A2F2F63E5C [192.168.65.1:29962] disconnected: connection closed by client.
+1774231332: Client auto-CACFA63C-324E-40D2-FAF9-20806C9B7CE9 [192.168.65.1:64181] disconnected: connection closed by client.
+1774231332: Client auto-499B09B6-24CF-2898-3F06-2E670C768397 [192.168.65.1:33008] disconnected: connection closed by client.
+1774231332: Client auto-D5C598B9-FACC-4512-7106-22302195D863 [192.168.65.1:29527] disconnected: connection closed by client.
+1774231332: Client auto-6456D140-D8DE-D92A-7FEA-5A5972C1CED7 [192.168.65.1:33282] disconnected: connection closed by client.
+1774231332: Client auto-2F115F36-B7A1-D341-0F05-906EE5B0E41C [192.168.65.1:32920] disconnected: connection closed by client.
+1774231332: Client auto-4E650123-295C-DD54-A58D-44D341940799 [192.168.65.1:52209] disconnected: connection closed by client.
+1774231332: Client auto-3358F95B-5872-D6C9-03A8-DD440F31E02B [192.168.65.1:26372] disconnected: connection closed by client.
+1774231332: Client auto-C060B725-6BAF-158F-C6AA-50EC11713632 [192.168.65.1:50076] disconnected: connection closed by client.
+1774231332: Client auto-9339E24B-B35C-7AE9-FA76-216E10099A8C [192.168.65.1:42999] disconnected: connection closed by client.
+1774231332: Client auto-2AE41C65-A083-00C1-6468-6B59604FDA99 [192.168.65.1:65473] disconnected: connection closed by client.
+1774231332: Client auto-D28A41C4-D5B5-7F11-9721-48B7C9BDFC45 [192.168.65.1:46017] disconnected: connection closed by client.
+1774232371: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1774233095: New connection from 192.168.65.1:57591 on port 1883.
+1774233095: New client connected from 192.168.65.1:57591 as auto-768B17C0-0479-090F-11D0-4FD207357091 (p4, c1, k60).
+1774233095: New connection from 192.168.65.1:29061 on port 1883.
+1774233095: New client connected from 192.168.65.1:29061 as auto-5044B96F-57DF-F09B-D3B7-B4391C4EA1D7 (p4, c1, k60).
+1774233096: New connection from 192.168.65.1:19548 on port 1883.
+1774233096: New client connected from 192.168.65.1:19548 as auto-584ABE62-2F4E-6212-B4E4-790E09B7D4E5 (p4, c1, k60).
+1774233096: New connection from 192.168.65.1:29426 on port 1883.
+1774233096: New connection from 192.168.65.1:42895 on port 1883.
+1774233096: New connection from 192.168.65.1:56038 on port 1883.
+1774233096: New connection from 192.168.65.1:28660 on port 1883.
+1774233096: New connection from 192.168.65.1:53891 on port 1883.
+1774233096: New connection from 192.168.65.1:41801 on port 1883.
+1774233096: New connection from 192.168.65.1:53045 on port 1883.
+1774233096: New connection from 192.168.65.1:21806 on port 1883.
+1774233096: New connection from 192.168.65.1:39641 on port 1883.
+1774233096: New client connected from 192.168.65.1:29426 as auto-7093CB34-DC89-441F-A1EB-482377F64F18 (p4, c1, k60).
+1774233096: New client connected from 192.168.65.1:42895 as auto-E23EF2E7-6F48-3137-202C-63242CFB6713 (p4, c1, k60).
+1774233096: New client connected from 192.168.65.1:56038 as auto-29C6B552-DFA0-0021-8756-2FD20636BBAB (p4, c1, k60).
+1774233096: New client connected from 192.168.65.1:28660 as auto-C4350AE4-AEB3-D98F-0572-6CAC6461115C (p4, c1, k60).
+1774233096: New client connected from 192.168.65.1:53891 as auto-AC7B2FBB-5983-247A-FDA0-8B5EFF396CFB (p4, c1, k60).
+1774233096: New client connected from 192.168.65.1:41801 as auto-204D6254-5D7F-7EAC-42C3-EF945F92F714 (p4, c1, k60).
+1774233096: New client connected from 192.168.65.1:53045 as auto-58CF85AC-F28D-1749-2E25-E290D4640437 (p4, c1, k60).
+1774233096: New client connected from 192.168.65.1:21806 as auto-0EEFD1B1-A2C0-F040-928A-52117A31ED20 (p4, c1, k60).
+1774233096: New client connected from 192.168.65.1:39641 as auto-C6ED5284-FEDC-0321-AB77-C6EF23620E55 (p4, c1, k60).
+1774233097: New connection from 192.168.65.1:42135 on port 1883.
+1774233097: New client connected from 192.168.65.1:42135 as auto-FAFC40F5-FC66-AC62-D0CA-2ECD159942E6 (p4, c1, k60).
+1774233575: Client auto-768B17C0-0479-090F-11D0-4FD207357091 [192.168.65.1:57591] disconnected: connection closed by client.
+1774233575: Client auto-5044B96F-57DF-F09B-D3B7-B4391C4EA1D7 [192.168.65.1:29061] disconnected: connection closed by client.
+1774233575: Client auto-AC7B2FBB-5983-247A-FDA0-8B5EFF396CFB [192.168.65.1:53891] disconnected: connection closed by client.
+1774233575: Client auto-7093CB34-DC89-441F-A1EB-482377F64F18 [192.168.65.1:29426] disconnected: connection closed by client.
+1774233575: Client auto-0EEFD1B1-A2C0-F040-928A-52117A31ED20 [192.168.65.1:21806] disconnected: connection closed by client.
+1774233575: Client auto-29C6B552-DFA0-0021-8756-2FD20636BBAB [192.168.65.1:56038] disconnected: connection closed by client.
+1774233575: Client auto-584ABE62-2F4E-6212-B4E4-790E09B7D4E5 [192.168.65.1:19548] disconnected: connection closed by client.
+1774233575: Client auto-C6ED5284-FEDC-0321-AB77-C6EF23620E55 [192.168.65.1:39641] disconnected: connection closed by client.
+1774233575: Client auto-E23EF2E7-6F48-3137-202C-63242CFB6713 [192.168.65.1:42895] disconnected: connection closed by client.
+1774233575: Client auto-58CF85AC-F28D-1749-2E25-E290D4640437 [192.168.65.1:53045] disconnected: connection closed by client.
+1774233575: Client auto-204D6254-5D7F-7EAC-42C3-EF945F92F714 [192.168.65.1:41801] disconnected: connection closed by client.
+1774233575: Client auto-C4350AE4-AEB3-D98F-0572-6CAC6461115C [192.168.65.1:28660] disconnected: connection closed by client.
+1774233575: Client auto-FAFC40F5-FC66-AC62-D0CA-2ECD159942E6 [192.168.65.1:42135] disconnected: connection closed by client.
+1774233642: New connection from 192.168.65.1:22894 on port 1883.
+1774233642: New client connected from 192.168.65.1:22894 as auto-4B66AE5C-3D54-6619-086E-AA9C52BF1E1F (p4, c1, k60).
+1774233642: New connection from 192.168.65.1:28706 on port 1883.
+1774233642: New client connected from 192.168.65.1:28706 as auto-AB2949E4-483D-803D-3369-F2E08F68F497 (p4, c1, k60).
+1774233643: New connection from 192.168.65.1:63287 on port 1883.
+1774233643: New connection from 192.168.65.1:26344 on port 1883.
+1774233643: New connection from 192.168.65.1:35408 on port 1883.
+1774233643: New connection from 192.168.65.1:33070 on port 1883.
+1774233643: New connection from 192.168.65.1:38377 on port 1883.
+1774233643: New connection from 192.168.65.1:31939 on port 1883.
+1774233643: New connection from 192.168.65.1:22325 on port 1883.
+1774233643: New connection from 192.168.65.1:43975 on port 1883.
+1774233643: New connection from 192.168.65.1:31031 on port 1883.
+1774233643: New client connected from 192.168.65.1:63287 as auto-D58D4912-0ADF-A3AB-40A2-968EF7C4BD58 (p4, c1, k60).
+1774233643: New client connected from 192.168.65.1:26344 as auto-82C43CF9-4772-29B6-65EB-FB16B3E2B72A (p4, c1, k60).
+1774233643: New client connected from 192.168.65.1:35408 as auto-2DF2CFFD-04A8-B33A-025E-5A3E622B385F (p4, c1, k60).
+1774233643: New client connected from 192.168.65.1:33070 as auto-B7C59D48-1841-7FD7-113A-67369A323DE2 (p4, c1, k60).
+1774233643: New client connected from 192.168.65.1:38377 as auto-57CADCAB-9803-D56B-3F3D-68B6994B4F03 (p4, c1, k60).
+1774233643: New client connected from 192.168.65.1:31939 as auto-C43F0FF2-EEE5-A1FD-E224-DDA26AA37048 (p4, c1, k60).
+1774233643: New client connected from 192.168.65.1:22325 as auto-01F7CE63-68D8-7DA4-6B43-A0226D69B8F4 (p4, c1, k60).
+1774233643: New client connected from 192.168.65.1:43975 as auto-BCB536DE-CA4C-7235-2276-996BF1E81B98 (p4, c1, k60).
+1774233643: New client connected from 192.168.65.1:31031 as auto-FC7B8C8F-F868-7E03-76A7-EAFADE58BE57 (p4, c1, k60).
+1774233643: New connection from 192.168.65.1:62450 on port 1883.
+1774233643: New client connected from 192.168.65.1:62450 as auto-DFFD3164-2150-1DA0-666D-E43F19D4EFF4 (p4, c1, k60).
+1774233644: New connection from 192.168.65.1:41917 on port 1883.
+1774233644: New client connected from 192.168.65.1:41917 as auto-9C0D205D-6912-6F18-1D90-4DF053678A4A (p4, c1, k60).
+1774233927: Client auto-9C0D205D-6912-6F18-1D90-4DF053678A4A [192.168.65.1:41917] disconnected.
+1774233927: Client auto-DFFD3164-2150-1DA0-666D-E43F19D4EFF4 [192.168.65.1:62450] disconnected: connection closed by client.
+1774233927: Client auto-01F7CE63-68D8-7DA4-6B43-A0226D69B8F4 [192.168.65.1:22325] disconnected: connection closed by client.
+1774233927: Client auto-FC7B8C8F-F868-7E03-76A7-EAFADE58BE57 [192.168.65.1:31031] disconnected: connection closed by client.
+1774233927: Client auto-57CADCAB-9803-D56B-3F3D-68B6994B4F03 [192.168.65.1:38377] disconnected: connection closed by client.
+1774233927: Client auto-2DF2CFFD-04A8-B33A-025E-5A3E622B385F [192.168.65.1:35408] disconnected: connection closed by client.
+1774233927: Client auto-D58D4912-0ADF-A3AB-40A2-968EF7C4BD58 [192.168.65.1:63287] disconnected: connection closed by client.
+1774233927: Client auto-B7C59D48-1841-7FD7-113A-67369A323DE2 [192.168.65.1:33070] disconnected: connection closed by client.
+1774233927: Client auto-BCB536DE-CA4C-7235-2276-996BF1E81B98 [192.168.65.1:43975] disconnected: connection closed by client.
+1774233927: Client auto-AB2949E4-483D-803D-3369-F2E08F68F497 [192.168.65.1:28706] disconnected: connection closed by client.
+1774233927: Client auto-4B66AE5C-3D54-6619-086E-AA9C52BF1E1F [192.168.65.1:22894] disconnected: connection closed by client.
+1774233927: Client auto-82C43CF9-4772-29B6-65EB-FB16B3E2B72A [192.168.65.1:26344] disconnected: connection closed by client.
+1774233927: Client auto-C43F0FF2-EEE5-A1FD-E224-DDA26AA37048 [192.168.65.1:31939] disconnected: connection closed by client.

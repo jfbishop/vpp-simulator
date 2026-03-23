@@ -12,6 +12,8 @@ import json
 import time
 import logging
 from datetime import datetime, timezone
+from grid.sim_clock import SimClock, TIME_SCALE
+
 
 import paho.mqtt.client as mqtt
 from dotenv import load_dotenv
@@ -28,7 +30,7 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger("grid-publisher")
-PUBLISH_INTERVAL_SEC = 10
+PUBLISH_INTERVAL_SEC = (10 * 60) / TIME_SCALE  # 10 sim-minutes in real seconds
 
 
 def run():
@@ -46,13 +48,13 @@ def run():
         threshold_mw = get_dispatch_threshold()
 
         payload = json.dumps({
-            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "timestamp": SimClock.now().isoformat(),
             "load_mw": load_mw,
             "dispatch_threshold_mw": threshold_mw,
         })
 
         client.publish("vpp/grid/load", payload)
-        logger.info(f"Baseline load: {load_mw:.2f} MW")
+        logger.info(f"Baseline load: {load_mw:.2f} MW | Sim time: {SimClock.sim_time_str()}")
 
         time.sleep(PUBLISH_INTERVAL_SEC)
 

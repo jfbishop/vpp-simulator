@@ -2,7 +2,7 @@ from influxdb_client import InfluxDBClient, Point
 from influxdb_client.client.write_api import SYNCHRONOUS
 from dotenv import load_dotenv
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 
 load_dotenv()
 
@@ -20,7 +20,7 @@ point = (
     .tag("asset_id", "test-asset")
     .tag("asset_type", "test")
     .field("power_kw", 42.5)
-    .time(datetime.utcnow())
+    .time(datetime.now(timezone.utc))
 )
 
 write_api.write(bucket=BUCKET, org=ORG, record=point)

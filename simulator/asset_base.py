@@ -17,6 +17,8 @@ import logging
 import threading
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
+from grid.sim_clock import SimClock, TIME_SCALE
+
 
 import paho.mqtt.client as mqtt
 from dotenv import load_dotenv
@@ -46,7 +48,12 @@ class AssetBase(ABC):
                               represents 15-min intervals in compressed time)
     """
 
-    PUBLISH_INTERVAL_SEC = 15
+    # 15 sim minutes = 15 * 60 / TIME_SCALE real seconds = 2.5 real seconds
+    PUBLISH_INTERVAL_SEC = (15 * 60) / TIME_SCALE  # ~2.5 seconds at 360x
+
+    # Simulated seconds per publish interval — use this for physics calculations
+    PUBLISH_INTERVAL_SIM_SEC = 15 * 60  # always 15 sim-minutes regardless of scale
+
 
     def __init__(self, asset_id: str, asset_type: str):
         self.asset_id = asset_id
@@ -139,7 +146,7 @@ class AssetBase(ABC):
         message = {
             "asset_id": self.asset_id,
             "asset_type": self.asset_type,
-            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "timestamp": SimClock.now().isoformat(),
             **state   # merge in the asset-specific fields
         }
 

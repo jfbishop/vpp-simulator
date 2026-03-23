@@ -23,6 +23,7 @@ from simulator.thermostat import ThermostatAsset
 from simulator.industrial_load import IndustrialLoadAsset
 from coordinator.coordinator import Coordinator
 from grid.publisher import run as run_grid_publisher
+from grid.sim_clock import SimClock, TIME_SCALE
 from dotenv import load_dotenv
 from influx_writer import InfluxWriter
 import os
@@ -38,6 +39,26 @@ logging.basicConfig(
 BROKER = os.getenv("MQTT_BROKER", "localhost")
 PORT = int(os.getenv("MQTT_PORT", 1883))
 
+def run_watchdog(sim_days: float = 2.0):
+    """
+    Exits the simulation after sim_days simulated days have elapsed.
+    Uses os._exit() to cleanly terminate all daemon threads.
+    """
+    import time
+    real_seconds_per_sim_day = (24 * 60 * 60) / TIME_SCALE
+    total_real_seconds = real_seconds_per_sim_day * sim_days
+    
+    logger = logging.getLogger("watchdog")
+    logger.info(
+        f"Watchdog started — will exit after {sim_days} simulated days "
+        f"({total_real_seconds:.0f} real seconds)"
+    )
+    
+    time.sleep(total_real_seconds)
+    logger.info("Simulation complete — 2 simulated days elapsed. Exiting.")
+    os._exit(0)
+
+
 
 def start_thread(target, name: str, daemon: bool = True) -> threading.Thread:
     """Starts a function in a named daemon thread."""
@@ -47,6 +68,17 @@ def start_thread(target, name: str, daemon: bool = True) -> threading.Thread:
 
 
 if __name__ == "__main__":
+    SimClock.initialize()  # start at midnight Texas time
+
+    # Start watchdog — auto-exits after 2 simulated days
+    watchdog_thread = threading.Thread(
+        target=run_watchdog,
+        args=(2.0,),
+        name="watchdog",
+        daemon=True
+    )
+    watchdog_thread.start()
+
     print("""
 ╔══════════════════════════════════════════════╗
 ║           VPP Simulator Starting             ║
@@ -126,7 +158,7 @@ if __name__ == "__main__":
         asset_id="industrial-01",
         peak_load_kw=500.0,
         min_load_kw=150.0,
-        min_island_duration_sec=300.0,
+        min_island_duration_sec=(60 * 60) / TIME_SCALE,  # 60 sim-min in real seconds
     )
     threads.append(start_thread(industrial.run, "industrial-01"))
 

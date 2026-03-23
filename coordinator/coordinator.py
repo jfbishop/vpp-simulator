@@ -31,6 +31,8 @@ from datetime import datetime, timezone
 from enum import Enum
 from dataclasses import dataclass, field
 from typing import Optional
+from grid.sim_clock import SimClock, TIME_SCALE
+
 
 import paho.mqtt.client as mqtt
 from dotenv import load_dotenv
@@ -50,20 +52,39 @@ logging.basicConfig(
 
 # Load thresholds as fraction of PEAK_MW from baseline.py (65.0 MW)
 PEAK_MW = 65.0
-DISPATCH_THRESHOLD_MW = PEAK_MW * 0.85   # start dispatching at 85% of peak
-RELEASE_THRESHOLD_MW  = PEAK_MW * 0.75   # release when load drops to 75%
+DISPATCH_THRESHOLD_MW = PEAK_MW * 0.92   # start dispatching at 85% of peak
+RELEASE_THRESHOLD_MW  = PEAK_MW * 0.85   # release when load drops to 75%
+# Load threshold below which BESS should charge autonomously
+# Set well below dispatch threshold so charging only happens
+# during genuine overnight troughs
+BESS_CHARGE_THRESHOLD_MW = 45.0 
+# Target SoC for BESS before evening peak — coordinator charges
+# BESS up to this level during off-peak hours
+BESS_SOC_TARGET = 0.90
 
 # How long each resource stays dispatched before coordinator auto-releases
 # These represent compressed simulation time
-BESS_MAX_DISPATCH_SEC         = 60    # BESS is self-managing via SoC limits
-EV_V2G_MAX_DISPATCH_SEC       = 45
-EV_PAUSE_MAX_DISPATCH_SEC     = 30
-THERMOSTAT_MIN_CURTAIL_SEC    = 30    # minimum curtailment duration
-THERMOSTAT_COOLDOWN_SEC       = 60    # lockout after release (rebound window)
-INDUSTRIAL_MAX_DISPATCH_SEC   = 300   # matches asset min island duration
+
+# BESS stays dispatched for 30 sim-minutes before auto-release
+# (self-managing via SoC anyway, this is just a safety ceiling)
+BESS_MAX_DISPATCH_SEC      = (30 * 60) / TIME_SCALE
+
+# EV V2G dispatched for 20 sim-minutes
+EV_V2G_MAX_DISPATCH_SEC    = (20 * 60) / TIME_SCALE
+
+# EV charge pause for 15 sim-minutes (short — don't inconvenience driver)
+EV_PAUSE_MAX_DISPATCH_SEC  = (15 * 60) / TIME_SCALE
+
+# Thermostat curtailed for minimum 30 sim-minutes before release allowed
+THERMOSTAT_MIN_CURTAIL_SEC = (30 * 60) / TIME_SCALE
+
+# Thermostat cooldown 45 sim-minutes after release (rebound window)
+THERMOSTAT_COOLDOWN_SEC    = (45 * 60) / TIME_SCALE
+
+INDUSTRIAL_MAX_DISPATCH_SEC   = (60 * 60) / TIME_SCALE   # matches asset min island duration
 
 # How often the coordinator runs its dispatch evaluation loop
-COORDINATOR_LOOP_SEC = 5
+COORDINATOR_LOOP_SEC = (5 * 60) / TIME_SCALE
 
 
 # ---------------------------------------------------------------------------
@@ -73,6 +94,7 @@ COORDINATOR_LOOP_SEC = 5
 class DispatchState(Enum):
     NORMAL     = "normal"
     DISPATCHED = "dispatched"
+    CHARGING   = "charging"    # coordinator-directed charge, not a dispatch
     COOLDOWN   = "cooldown"    # thermostat only
 
 
@@ -214,6 +236,68 @@ class Coordinator:
         self.logger.info(f"Dispatched to {asset_id}: {signal}")
 
     # ------------------------------------------------------------------
+    # Fleet status publishing
+    # ------------------------------------------------------------------
+
+    def _write_fleet_status(self) -> None:
+        """
+        Writes coordinator-side fleet status to InfluxDB every loop.
+        This is separate from asset telemetry — it captures the coordinator's
+        view of each asset's dispatch state which is not available from
+        asset messages alone (e.g. cooldown state only exists in coordinator).
+        """
+        from influxdb_client import InfluxDBClient, Point
+        from influxdb_client.client.write_api import SYNCHRONOUS
+        import os
+
+        if not hasattr(self, '_influx_write_api'):
+            client = InfluxDBClient(
+                url=os.getenv("INFLUXDB_URL"),
+                token=os.getenv("INFLUXDB_TOKEN"),
+                org=os.getenv("INFLUXDB_ORG"),
+            )
+            self._influx_write_api = client.write_api(write_options=SYNCHRONOUS)
+
+        with self._registry_lock:
+            assets = list(self._assets.values())
+
+        for asset in assets:
+            if asset.is_stale():
+                continue
+
+            # Determine if asset is physically unavailable
+            # (separate from coordinator dispatch state)
+            state = asset.last_state
+            unavailable = False
+            if asset.asset_type == "ev_charger":
+                unavailable = not bool(state.get("plugged_in", 0))
+            elif asset.asset_type == "industrial_load":
+                unavailable = not bool(state.get("islanding_available", 1)) and \
+                          asset.dispatch_state == DispatchState.NORMAL
+
+            point = (
+                Point("coordinator_state")
+                .tag("asset_id", asset.asset_id)
+                .tag("asset_type", asset.asset_type)
+                .tag("dispatch_state", asset.dispatch_state.value)
+                .field("is_dispatched", 1 if asset.dispatch_state == DispatchState.DISPATCHED else 0)
+                .field("is_charging", 1 if asset.dispatch_state == DispatchState.CHARGING else 0)
+                .field("is_cooldown", 1 if asset.dispatch_state == DispatchState.COOLDOWN else 0)
+                .field("is_normal", 1 if asset.dispatch_state == DispatchState.NORMAL and not unavailable else 0)
+                .field("is_unavailable", 1 if unavailable else 0)
+                .time(SimClock.now(), "s")
+            )
+
+            try:
+                self._influx_write_api.write(
+                    bucket=os.getenv("INFLUXDB_BUCKET"),
+                    org=os.getenv("INFLUXDB_ORG"),
+                    record=point
+                )
+            except Exception as e:
+                self.logger.error(f"Fleet status write error: {e}")
+
+    # ------------------------------------------------------------------
     # Grid load computation
     # ------------------------------------------------------------------
 
@@ -276,7 +360,7 @@ class Coordinator:
         """
         dispatched = False
         for asset in self._get_assets_by_type("bess"):
-            if asset.dispatch_state != DispatchState.NORMAL:
+            if asset.dispatch_state not in (DispatchState.NORMAL, DispatchState.CHARGING):
                 continue
 
             state = asset.last_state
@@ -487,6 +571,59 @@ class Coordinator:
                 )
 
     # ------------------------------------------------------------------
+    # BESS charging
+    # ------------------------------------------------------------------
+
+    def _manage_bess_charging(self, net_load_mw: float) -> None:
+        """
+        Sends charge commands to BESS assets during off-peak hours
+        and idle commands when load rises.
+
+        This keeps BESS assets topped up before evening peak events
+        without the asset needing to know anything about grid state.
+
+        Called every loop iteration regardless of dispatch threshold status.
+        """
+        for asset in self._get_assets_by_type("bess"):
+            state = asset.last_state
+            soc = float(state.get("state_of_charge", 0.0))
+            mode = state.get("mode", "idle")
+
+            # Don't interfere if asset is in a real dispatch event
+            if asset.dispatch_state == DispatchState.DISPATCHED:
+                continue
+
+            if net_load_mw < BESS_CHARGE_THRESHOLD_MW and soc < BESS_SOC_TARGET:
+                if asset.dispatch_state != DispatchState.CHARGING:
+                    self._publish_dispatch(
+                        asset.asset_id,
+                        {"command": "charge",
+                        "target_kw": float(state.get("power_rating_kw", 200.0)) * 0.5}
+                    )
+                    asset.dispatch_state = DispatchState.CHARGING
+                    self.logger.info(
+                        f"{asset.asset_id}: charging started "
+                        f"| SoC: {soc:.0%} | load: {net_load_mw:.1f} MW"
+                    )
+
+            elif (net_load_mw >= BESS_CHARGE_THRESHOLD_MW and
+                asset.dispatch_state == DispatchState.CHARGING):
+                self._publish_dispatch(asset.asset_id, {"command": "idle"})
+                asset.dispatch_state = DispatchState.NORMAL
+                self.logger.info(
+                    f"{asset.asset_id}: charge stopped — load rising: {net_load_mw:.1f} MW"
+                )
+
+            elif soc >= BESS_SOC_TARGET and asset.dispatch_state == DispatchState.CHARGING:
+                self._publish_dispatch(asset.asset_id, {"command": "idle"})
+                asset.dispatch_state = DispatchState.NORMAL
+                self.logger.info(
+                    f"{asset.asset_id}: charge complete | SoC: {soc:.0%}"
+                )
+
+
+
+    # ------------------------------------------------------------------
     # Main dispatch evaluation loop
     # ------------------------------------------------------------------
 
@@ -530,26 +667,64 @@ class Coordinator:
                     f"{cooldown} cooldown"
                 )
 
+                # Always manage BESS charging regardless of dispatch state
+                self._manage_bess_charging(net_load_mw)
+
                 if net_load_mw >= DISPATCH_THRESHOLD_MW:
                     self.logger.warning(
                         f"DISPATCH EVENT: {net_load_mw:.2f} MW >= "
                         f"{DISPATCH_THRESHOLD_MW:.1f} MW threshold"
                     )
-                    # Work through priority tiers until load is addressed
-                    # Each _dispatch_* call returns True if it did something
-                    if not self._dispatch_bess():
+                    # Dispatch one tier per loop iteration — check if anything
+                    # is already dispatched at each tier before escalating
+                    # This gives each tier time to take effect before calling
+                    # on more disruptive resources
+                    
+                    bess_dispatched = any(
+                        a.dispatch_state == DispatchState.DISPATCHED
+                        for a in self._assets.values()
+                        if a.asset_type == "bess"
+                    )
+                    ev_dispatched = any(
+                        a.dispatch_state == DispatchState.DISPATCHED
+                        for a in self._assets.values()
+                        if a.asset_type == "ev_charger"
+                    )
+                    thermostat_dispatched = any(
+                        a.dispatch_state == DispatchState.DISPATCHED
+                        for a in self._assets.values()
+                        if a.asset_type == "thermostat"
+                    )
+                    industrial_dispatched = any(
+                        a.dispatch_state == DispatchState.DISPATCHED
+                        for a in self._assets.values()
+                        if a.asset_type == "industrial_load"
+                    )
+
+                    if not bess_dispatched:
+                        # Tier 1: try BESS first
+                        self._dispatch_bess()
+                    elif not ev_dispatched:
+                        # Tier 2: BESS already working, try EV V2G
                         if not self._dispatch_ev_v2g():
                             if not self._dispatch_ev_pause():
-                                if not self._dispatch_thermostats():
-                                    self._dispatch_industrial()
+                                pass  # wait for next loop before escalating further
+                    elif not thermostat_dispatched:
+                        # Tier 3: EV already working, try thermostats
+                        self._dispatch_thermostats()
+                    elif not industrial_dispatched:
+                        # Tier 4: last resort
+                        self._dispatch_industrial()
 
                 elif net_load_mw < RELEASE_THRESHOLD_MW:
                     self._release_assets()
 
+                self._write_fleet_status()
+        
             except Exception as e:
                 self.logger.error(f"Error in dispatch loop: {e}", exc_info=True)
 
-            time.sleep(COORDINATOR_LOOP_SEC)
+            time.sleep(COORDINATOR_LOOP_SEC)           
 
     # ------------------------------------------------------------------
     # Entry point
